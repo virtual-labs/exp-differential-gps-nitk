@@ -1,1 +1,1 @@
-### Aim of the experiment
+To obtain an orthomosaic map using photogrammetric drones.

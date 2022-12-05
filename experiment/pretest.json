@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "How many rotors does an octocopter have in general?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "2",
+        "b": "4",
+        "c": "6",
+        "d": "8"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,14 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In a quadcopter, all the motors rotate in the same direction to maneuver the drone?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -32,8 +30,59 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following components acts as the brain of a drone?",
+      "answers": {
+        "a": "GPS module",
+        "b": "Electronic speed controller",
+        "c": "Accelerometer",
+        "d": "Flight controller"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If a drone flies on a 3000 mAh battery and its current consumption is 60A for the given height, what would be its flight time?",
+      "answers": {
+        "a": "5 min",
+        "b": "3 min",
+        "c": "6 min",
+        "d": "4 min"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": "Which type of electric motors are widely used in drones?",
+      "answers": {
+        "a": "Brushed DC motors",
+        "b": "Brushless DC motors",
+        "c": "Synchronous motors",
+        "d": "Three-phase induction motors"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
     }
   ]
 }
