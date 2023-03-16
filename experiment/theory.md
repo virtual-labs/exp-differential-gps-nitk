@@ -1,15 +1,35 @@
-### INTRODUCTION:
+### Introduction
 
-Surveying is the precise science of determining the positions of, and the distances between, points in 2D and 3D space. Surveys provide critical information that enables informed decision-making ranging from construction site planning, to design and upkeep of infrastructure, to delineating cadastral property boundaries, and more.
+What is DGPS?
 
-Unmanned Aerial Vehicles, or UAVs, excel at rapidly acquiring data from vantage points inaccessible to humans. When surveying challenging terrain, drones make it no longer necessary for human operators to physically access and measure points in hazardous or difficult-to-reach locations. Additionally, while traditional surveying methods require meticulous measurement, preparation, and planning, drones can capture comparable data in dramatically shorter timeframes.
+An enhancement to the Global Positioning System (GPS) which provides improved location accuracy, in the range of operations of each system, from the 15m nominal GPS accuracy to about 1–3 cm in case of the best implementations.
 
-In construction and project management, drone surveying can provide critical data that goes hand in hand with Building Information Modeling (BIM).
-At each stage of the construction process, high-resolution 3D photogrammetric or laser models captured by drones can be overlaid on and compared with pre-planned BIM objects. This allows for discrepancies between plans and reality to be identified.
+DGPS uses a network of fixed ground-based reference stations to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions.
 
-ACCURACY OF DRONE SURVEY:  
-Before adopting drones into their workflows, many surveyors ask about aerial surveying accuracy. What degree of accuracy can drone surveying techniques achieve?
-Surveying drone solutions can produce surveys with different degrees of accuracy, depending on the project's requirements. For some applications, like checking crop growth, or construction progress, high relative accuracy is sufficient. For other jobs that also require high absolute accuracy, there are drones equipped with real-time kinematics (RTK) and post-processing kinematics (PPK) capabilities. When paired with a few GCPs, a high level of accuracy can be achieved.
+DGPS (Differential GPS) is essentially a system to provide positional corrections to GPS signals. DGPS uses a fixed, known position to adjust real-time GPS signals to eliminate pseudorange errors.
 
-DESCRIPTION:  
-Drones are commonly used for taking cinematic shots, wedding shoots, and photography. As technology is advancing, using geo maps for surveys is widely in use. Google maps data is not precise enough and real-time. On the other hand, Satellite data is very costly. By using drones we can overcome the disadvantages of map data and satellite data. Drone photogrammetry involves capturing large volumes of 2D images over a geographical area and compiling them to create 3D topographical models.An orthomosaic is essentially a large map that is made up of smaller photos. Each aerial photo that a drone pilot captures is pinned to a geographic position. Photos need to have an overlap of at least 70 percent to create an accurate picture.
+GPS signals coming from satellites down to the ground have to travel through layers of the earth’s atmosphere - subjected to delays.
+
+Affects the time taken for the signal to travel from any given satellite to a GPS receiver.
+
+The error in distance due to this phenomenon is called pseudorange errors.
+
+These corrections are then transmitted to the receivers which are usually short range.
+
+![Pseudorange error correction mechanism in DGPS System.](/images/th1.png)
+
+Errors that can be compensated with DGPS system are:
+
+Signal noise 0-30m - All removed
+
+Clock drift 0-1.5m - All removed
+
+Multipath 0-1m - All removed
+
+Ephemeris data 1-5m - All removed
+
+Troposphere 0-30m - All removed
+
+Ionosphere 0-30m - Mostly removed
+
+![Image depicting various sources of error in GPS Signals.](/images/th2.png)

@@ -1,43 +1,103 @@
-### Procedure
+Step by step procedure to carry out the experiment goes here
 
-1.  Read the Objectives and Apparatus, hover over the Description and Click on Next.  
-    ![Alt text](./images/proc1.png)
+1. When you open Setting up the Base Station simulation, a window will open as shown below, click on Description to understand the terminologies, click on NEXT button to proceed.
 
-2.  Click on the antennas to unfold them.  
-    ![Alt text](./images/proc2.png)
+![](/images/st1.png)
 
-3.  Unfold the device holder, and click on the device to place it on the holder.  
-    ![Alt text](./images/proc3.png)
+2. Click on the bag to takeout the tripod stand.
 
-4.  Click on the Cable to connect the device to the transmitter. Click on Next.  
-    ![Alt text](./images/proc4.png)
+![](/images/st2.png)
 
-5.  Click on the fully charged Battery to insert it into the slot in the drone. Click on Next.  
-    ![Alt text](./images/proc5.png)
+3. Click on the bottom of the tripod stand to fix the tip.
 
-6.  Click on the Landing Pad and on the drone to place the drone on the landing pad. Click on Next.
-    ![Alt text](./images/proc6.png)
+![](/images/st4.png)
 
-7.  Click on the Power button of the transmitter to start the mission planning.
-    ![Alt text](./images/proc7.png)
+![](/images/st5.png)
 
-8.  Open the Flight planning Mission, Enter the name of the project. Click on Fly and select the flight height from the drop-down menu. Note down the corresponding resolution, and flight time. Click on Show Area to note down the area to be surveyed.
-    ![Alt text](./images/proc8.png)
+4. The tip is fixed to the tripod stand.Click on the next button to proceed.
 
-9.  Note down the Number of Batteries and the number of images to be captured. Click on Preflight Check and tick all the entities. Click on Start mission to fly the drone.
-    ![Alt text](./images/proc9.png)
+![](/images/st6.png)
 
-10. Note the image captures as the drone moves Click on Upload to upload the captured images
-    ![Alt text](./images/proc10.png)
+5. Click on the tripod stand to make it vertical.
 
-11. Click on OK to upload the images captured.
-    ![Alt text](./images/proc11.png)
+![](/images/st7.png)
 
-12. As the upload is complete click on Next to see the processed map.
-    ![Alt text](./images/proc12.png)
+6. Click on the screw to unclamp the tripod legs.
 
-13. To see the Orthomosaic map, DTM, and DSM map click as shown. Click on Next.
-    ![Alt text](./images/proc13.png)
+![](/images/st8.png)
 
-14. Refer to the inference of the map created.
-    ![Alt text](./images/proc14.png)
+7. The screw is unclamped and the leg length is increased to the required height.Click on the next button to proceed.
+
+![](/images/st14.png)
+
+8. Click on the tripod to place it at the required point.
+
+![](/images/st15.png)
+
+9. Click on the bottom to release the central drop stand to touch the ground.
+
+![](/images/st17.png)
+
+10. The tripod stand is placed at the required point.Click on the next button to proceed.
+
+![](/images/st20.png)
+
+11. Click on the adjustment springs to bring the bubble to the centre to make it truly vertical.
+
+![](/images/st21.png)
+
+12. Select the correct answer to proceed with the simulation.
+
+![](/images/st25.png)
+
+13. Click on the next button to proceed.
+
+![](/images/st26.png)
+
+14. Click on the lid of the base to open it.
+
+![](/images/st27.png)
+
+15. Click on the battery to insert it to the base.
+
+![](/images/st28.png)
+
+16. Click on the lid of the base to close it.
+
+![](/images/st29.png)
+
+17. Click on the next button to proceed.
+
+![](/images/st30.png)
+
+18. Click on the base to attach the rod.
+
+![](/images/st31.png)
+
+19. Click on the rod to attach it to the levelled tripod.
+
+![](/images/st33.png)
+
+20. Select the correct answer to proceed with the simulation.
+
+![](/images/st36.png)
+
+21. Click on the next button to proceed.
+
+![](/images/st37.png)
+
+22. Click on the bottom to observe the height of the stand.
+
+![](/images/st38.png)
+
+23. Select the correct answer to proceed with the simulation.
+
+![](/images/st39.png)
+
+24. Click on the next button to proceed.
+
+![](/images/st40.png)
+
+25. Setting up of base station at required location is complete. Click on the next button to proceed.
+
+![](/images/st41.png)

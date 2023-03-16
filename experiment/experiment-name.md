@@ -1,1 +1,1 @@
-## Photogrammetry: RGB data capturing using UAV
+## Georeferencing Aerial Maps Using DGPS
