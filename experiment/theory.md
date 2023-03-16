@@ -18,7 +18,7 @@ These corrections are then transmitted to the receivers which are usually short 
 
 <center>
   
-  <img src="images/th1.png" width="500" height="500" alt="Pseudorange error correction mechanism in DGPS System" />
+  <img src="images/th1.png" width="500" height="450" alt="Pseudorange error correction mechanism in DGPS System" />
   
   Pseudorange error correction mechanism in DGPS System
   
@@ -39,4 +39,10 @@ Troposphere 0-30m - All removed
 
 Ionosphere 0-30m - Mostly removed
 
-<img src="images/th2.png" width="500" height="500" alt="Image depicting various sources of error in GPS Signals" />
+<center>
+
+<img src="images/th2.png" width="500" height="450" alt="Image depicting various sources of error in GPS Signals" />
+  
+ Image depicting various sources of error in GPS Signals
+  
+ </center>
