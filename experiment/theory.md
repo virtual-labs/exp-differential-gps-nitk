@@ -16,7 +16,14 @@ The error in distance due to this phenomenon is called pseudorange errors.
 
 These corrections are then transmitted to the receivers which are usually short range.
 
-![Pseudorange error correction mechanism in DGPS System.](/images/th1.png)
+<center>
+  
+  <img src="images/th1.png" width="500" height="450" alt="Pseudorange error correction mechanism in DGPS System" />
+  
+  Pseudorange error correction mechanism in DGPS System
+  
+</center>
+
 
 Errors that can be compensated with DGPS system are:
 
@@ -32,4 +39,10 @@ Troposphere 0-30m - All removed
 
 Ionosphere 0-30m - Mostly removed
 
-![Image depicting various sources of error in GPS Signals.](/images/th2.png)
+<center>
+
+<img src="images/th2.png" width="500" height="450" alt="Image depicting various sources of error in GPS Signals" />
+  
+ Image depicting various sources of error in GPS Signals
+  
+ </center>
