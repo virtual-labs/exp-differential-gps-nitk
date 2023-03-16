@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the location accuracy of the DGPS system in case of best implementation?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "0-3m",
+        "b": "2-5mm",
+        "c": "1-3cm",
+        "d": "2-4cm"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "DGPS uses a fixed, known position to adjust real time GPS signals to eliminate________",
+      "answers": {
+        "a": "Signal error",
+        "b": "Pseudorange errors",
+        "c": "Signal noise",
+        "d": "GPS errors"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which one of the following errors is not completely removed by the DGPS system?",
+      "answers": {
+        "a": "Ephemeris data",
+        "b": "Troposphere",
+        "c": "Multipath",
+        "d": "Ionosphere"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In which orbit do the GPS satellites fly around the earth?",
+      "answers": {
+        "a": "Medium Earth orbit",
+        "b": "Geostationary transfer orbit",
+        "c": "Low Earth orbit",
+        "d": "Polar orbit"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the full form of DGPS?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Differentiate global position system",
+        "b": "Differential global positioning system",
+        "c": "Differential earth positioning system",
+        "d": "Differential global position system"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }

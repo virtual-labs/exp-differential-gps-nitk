@@ -1,13 +1,1105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="css/exp1.css"  />
+<script>
+var simsubscreennum = 0;
+var temp=0;
+var snd = document.getElementById("sound");
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+</script>
+<script defer src="js/exp1.js"></script>
+
+</head>
+
+<body style="margin:0; font-family:verdana;">
+<div id="simscreen">
+<div id="title"><h3>Georeferencing aerial maps using DGPS  </h3></div>
+<div class="simsubscreen" id="canvas0" >
+<h4 class="incanvas">Objective:</h4>
+<p class="incanvas" style="font-size:14px;">To learn the procedure of how to set up the base station in a DGPS survey.</p><br/>
+<h4 class="incanvas">Apparatus used:</h4>
+<p class="incanvas" style="font-size:14px;">DGPS base, Base tripod stand.</p>
+
+<img style="position:absolute; left:100px; top:150px;max-width:18%;width:100%;transform: rotateY(180deg)"src="Images/man.png" alt="" />
+<img style="position:absolute;left: 411px;top: 211px;max-width: 220px;width:100%;" title="Base tripod stand"  src="images/centeredbasestation.png" alt="" />
+<img style="position:absolute;left: 282px;top: 424px;width: 67px;" title="DGPS base"  src="images/hd.png" alt="" />
+<br>&nbsp;<span class="tooltip" style="border-bottom:1px dotted ; color:red;text-align:justify">Description
+	<span class="tooltiptext">
+		<p>In this experiment we will learn how to set up a base station for DGPS Survey.</p>
+	</span>
+	</span>
+</div>
+
+<div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;1&nbsp;</span>
+<p class="steptext">&nbsp;Take out the tripod stand to set it over the required point. Fix the tip for the central stand.</p>
+<img id="can1-0" style="position:absolute; left:150px; top:320px;max-width:380px;width:100%;" src="images/instrumentinsidebag.png" alt="" />
+<img id="can1-1" style="position:absolute; left:172px; top:180px;max-width:48%;width:100%;visibility:hidden;" src="images/standwntip.png" alt="" />
+<img id="can1-2" style="position: absolute;left: 420px;top: 120px;max-width: 25%;width: 100%;visibility: hidden;transform: rotate(-2deg);" src="images/tripodwithouttip.png" alt="" />
+<img id="can1-3" style="position:absolute; left:635px; top:95px;max-width:25%;width:100%;visibility:hidden;" src="images/animbase.png" alt="" />
+<img id="can1-4" style="position:absolute; left:172px; top:180px;max-width:48%;width:100%;visibility:hidden;" src="images/standwtip.png" alt="" />
+<img id="can1-5" style="position:absolute; left:455px; top:275px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+</div> 	
+
+<div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;2&nbsp;</span>
+	<p class="steptext">&nbsp;Unclamp the tripod legs and increase the leg length to the required height and tighten the clamps again.</p>
+	<img id="can2-0" style="position:absolute; left:172px; top:180px;max-width:48%;width:100%;" src="images/standwtip.png" alt="" />
+	<img id="can2-1" style="position:absolute; left:235px; top:220px;max-width:78%;width:100%;visibility:hidden;" src="images/animstand.png" alt="" />
+	<img id="can2-2" style="position:absolute; left:225px; top:130px;max-width:33%;width:100%;visibility:hidden;" src="images/standwnscrew.png" alt="" />
+	<img id="can2-13" style="position:absolute; left:363px; top:212px;max-width:1.5%;width:100%;visibility:hidden;" src="images/screw.png" alt="" />
+	<img id="can2-3" style="position:absolute; left:235px; top:220px;max-width:5%;width:100%;visibility:hidden;" src="images/handunclamp.png" alt="" />
+	<img id="can2-4" style="position:absolute; left:312px; top:120px;max-width:13%;width:100%;visibility:hidden;" src="images/animhand.png" alt="" />
+	<img id="can2-5" style="position:absolute; left:225px; top:130px;max-width:33%;width:100%;visibility:hidden;" src="images/standnleg.png" alt="" />
+	<img id="can2-6" style="position:absolute; left:262px; top:125px;max-width:33%;width:100%;visibility:hidden;" src="images/leg.png" alt="" />
+	<img id="can2-7" style="position:absolute; left:324px; top:125px;max-width:17%;width:100%;visibility:hidden;" src="images/unclampscrew.png" alt="" />
+	<img id="can2-8" style="position:absolute; left:165px; top:80px;max-width:40%;width:100%;visibility:hidden;" src="images/centeredbasestation.png" alt="" />
+	<img id="can2-9" style="position:absolute; left:225px; top:130px;max-width:33%;width:100%;visibility:hidden;" src="images/legwhand.png" alt="" />
+	<img id="can2-10" style="position:absolute; left:340px; top:120px;max-width:13%;width:100%;visibility:hidden;" src="images/animhand.png" alt="" />
+	<img id="can2-11" style="position:absolute; left:172px; top:180px;max-width:47%;width:100%;visibility:hidden;" src="images/standwhand.png" alt="" />
+	<p id="note1" class="note" style="position:absolute; left:455px; top:150px;visibility:hidden;">Similarly all legs are set</p>
+	</div> 
+
+<div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;3&nbsp;</span>
+	<p class="steptext">&nbsp;Now position the tripod over the required point and release the central stand to touch the ground.</p>
+	<img id="can3-0" style="position:absolute; left:-35px; top:130px;max-width:35%;width:100%;visibility:hidden;" src="images/centeredbasestation.png" alt="" />
+	<img id="can3-1" style="position: absolute;left: 219px;top: 278px;max-width: 31%;width: 100%;visibility: hidden;" src="./images/box.png" alt="" />
+	<img id="can3-2" style="position:absolute; left:235px; top:220px;max-width:15%;width:100%;visibility:hidden;" src="images/animhand.png" alt="" />
+	<img id="can3-4" style="position:absolute; left:525px; top:159px;max-width:22%;width:100%;visibility:hidden;" src="images/handcentralstanddrop.png" alt="" />
+	<img id="can3-3" style="position:absolute; left:485px; top:130px;max-width:22%;width:100%;visibility:hidden;" src="images/dropcentralstand.png" alt="" />
+	<img id="can3-5" style="position:absolute; left:190px; top:105px;max-width:35%;width:100%;visibility:hidden;" src="images/centeredbasestation.png" alt="" />
+	<img id="can3-6" style="position:absolute; left:190px; top:105px;max-width:35%;width:100%;visibility:hidden;" src="images/cbstatn.png" alt="" />		
+	<img id="can3-7" style="position:absolute; left:-35px; top:130px;max-width:35%;width:100%;visibility:hidden;" src="images/centeredbase.png" alt="" />
+	<img id="can3-8" style="position:absolute; left:300px; top:286px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+	<img id="can3-11" style="position:absolute; left:274px; top:-63px;max-width:69%;width:100%;visibility:hidden;" src="images/center.png" alt="" />
+	<img id="can3-10" style="position:absolute; left:444px; top:66px;max-width:29%;width:100%;visibility:hidden;" src="images/reading.png" alt="" />
+	<img id="can3-9" style="position:absolute; left:453px; top:105px;max-width:29%;width:100%;visibility:hidden;" src="images/centralstand.png" alt="" />
+	</div>
+
+<div class="simsubscreen" id="canvas4" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;4&nbsp;</span>
+	<p class="steptext">&nbsp;Using the adjustment springs, bring the bubble to the centre to make it truly vertical.</p>
+	<img id="can4-0" style="position:absolute; left:136px; top:105px;max-width:35%;width:100%;visibility:hidden;" src="images/cbstatn.png" alt="" />
+	<img id="can4-2" style="position:absolute; left:356px; top:88px;max-width:20%;width:100%;visibility:hidden;" src="images/handopeningofbaseleg.png" alt="" />
+	<img id="can4-1" style="position:absolute; left:396px; top:112px;max-width:16%;width:100%;visibility:hidden;" src="images/openingbaseleg.png" alt="" />
+	<img id="can4-3" style="position:absolute; left:366px; top:16px;max-width:33%;width:100%;visibility:hidden;" src="images/nobubble.png" alt="" />
+	<img id="can4-4" style="position:absolute; left:366px; top:16px;max-width:33%;width:100%;visibility:hidden;" src="images/bubble.png" alt="" />
+	<img id="can4-5" style="position:absolute; left:216px; top:100px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+	<img id="can4-6" style="position:absolute; left:243px; top:250px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+	<img id="can4-7" style="position: absolute;left: 165px;top: 278px;max-width: 31%;width: 100%;visibility: hidden;" src="./images/box.png" alt="" />
+	<img id="can4-8" style="position:absolute; left:136px; top:105px;max-width:35%;width:100%;visibility:hidden;" src="images/cbstn.png" alt="" />
+	<img id="can4-9" style="position:absolute; left:136px; top:105px;max-width:35%;width:100%;visibility:hidden;" src="images/centerrod.png" alt="" />
+	</div> 
+
+<div class="simsubscreen" id="canvas5" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;5&nbsp;</span>
+	<p class="steptext">&nbsp;Insert the battery in the battery slot provided in the base head.</p>
+	<img id="can5-0" style="position:absolute; left:245px; top:135px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwnbattery.png" alt=""/>	
+	<img id="can5-1" style="position: absolute; left: 550px; top: 126px; max-width: 18%; width: 100%; visibility: hidden;" src="images/handwbattery.png" alt="" />
+	<img id="can5-2" style="position:absolute; left:245px; top:134px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwbatteryclosed.png" alt="" />
+	<img id="can5-3" style="position:absolute; left:245px; top:134px;max-width:20%;width:100%;visibility:hidden;" src="images/headnolid.png" alt="" />
+	<img id="can5-4" style="position:absolute; left:290.5px; top:213px;max-width:8%;width:100%;visibility:hidden;" src="images/headlid.png" alt="" />
+	<img id="can5-5" style="position:absolute; left:245px; top:135px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwnlid.png" alt="" />
+	<img id="can5-6" style="position:absolute; left:285px; top:236.5px;max-width:9.5%;width:100%;visibility:hidden;" src="images/hdlidopen.png" alt="" />
+	</div> 
+
+<div class="simsubscreen" id="canvas6" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;6&nbsp;</span>
+	<p class="steptext">&nbsp;Now attach the rod and the base head to the levelled tripod.</p>
+	<img id="can6-0" style="position:absolute; left:72px; top:135px;max-width:18%;width:100%;visibility:hidden;" src="images/hd.png" alt="" />
+	<img id="can6-1" style="position:absolute; left:-10px; top:133px;max-width:29%;width:100%;visibility:hidden;" src="images/hdwhand.png" alt="" />
+	<img id="can6-2" style="position:absolute; left:-10px; top:134px;max-width:29%;width:100%;visibility:hidden;"  src="images/rdwhand.png" alt="" />
+	<img id="can6-3" style="position:absolute; left:230px; top:135px;max-width:35%;width:100%;visibility:hidden;" src="images/cbstatn.png" alt="" />
+	<img id="can6-4" style="position:absolute; left:40px; top:134px;max-width:8.5%;width:100%;visibility:hidden;" src="images/handtobasestnd.png" alt="" />
+	<img id="can6-6" style="position:absolute; left:264px; top:-100px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+    <img id="can6-7" style="position:absolute; left:508px; top:43.5px;max-width:25%;width:100%;visibility:hidden;" src="images/basewithhand.png" alt="" />
+	<img id="can6-8" style="position:absolute; left:499px; top:-2px;max-width:30%;width:100%;visibility:hidden;" src="images/stand.png" alt="" />
+	<img id="can6-9" style="position:absolute; left:151px; top:-15px;max-width:55%;width:100%;visibility:hidden;" src="images/finalstandd.png" alt="" />
+	<img id="can6-10" style="position:absolute; left:324px; top:35.5px;max-width:8.5%;width:100%;visibility:hidden;" src="images/basetostand.png" alt="" />
+	<img id="can6-12" style="position:absolute; left:-10px; top:134px;max-width:29%;width:100%;visibility:hidden;"  src="images/rdhd.png" alt="" />
+	<img id="can6-11" style="position:absolute; left:-0.5px; top:146px;max-width:27%;width:100%;visibility:hidden;"  src="images/rd.png" alt="" />
+	<img id="can6-5" style="position:absolute; left:-10px; top:134px;max-width:29%;width:100%;visibility:hidden;" src="images/handbasestnd.png" alt="" />
+    </div> 
+
+<div class="simsubscreen" id="canvas7" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;7&nbsp;</span>
+	<p class="steptext">&nbsp; Note down the height of the instrument shown by the graduated middle stand and add 25cm (height of rod) to this reading to get the actual height of the instrument.</p>
+	<img id="can7-0" style="position:absolute; left:-66px; top:-10px;max-width:55%;width:100%;visibility:hidden;" src="images/finalstandd.png" alt="" />
+	<img id="can7-1" style="position:absolute; left:123px; top:338px;max-width:9%;width:100%;visibility:hidden;" src="images/circle.png" alt="" />
+	<img id="can7-2" style="position:absolute; left:310px; top:60px;max-width:14.5%;width:100%;visibility:hidden;" src="images/basestndreading.png" alt="" />
+	<img id="can7-5" style="position:absolute; left:265px; top:65px;max-width:24.5%;width:100%;visibility:hidden;" src="images/reading1.png" alt="" />
+	<img id="can7-3" style="position:absolute; left:310px; top:60px;max-width:25%;width:100%;visibility:hidden;" src="images/handtakingreading.png" alt="" />
+	<img id="can7-4" style="position:absolute; left:-66px; top:-10px;max-width:55%;width:100%;visibility:hidden;" src="images/reading2.png" alt="" />
+	<p id="note2" class="note" style="position:absolute; left:400px; top:250px;visibility:hidden;">Height of the instrument is:<br> 1.46m + 0.25m = 1.71m<br><span style="display: inline-block;padding-top: 8px;">Make a note of this height for data logging</span></p>
+    </div>
+<div class="simsubscreen" id="canvas8" style="visibility:hidden;">
+	<img id="can8-0" style="position:absolute; left:150px; top:-10px;max-width:55%;width:100%;" src="images/finalstandd.png" alt="" />
+	<h4 class="incanvas"><span style="position: absolute;text-align: center;left: 140px;">Set up of base at the required location is completed.</span></h4>
+    </div>
+<div class="simsubscreen" id="canvas9" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span id="stepId" class="circlebg" >&nbsp;8&nbsp;</span>
+	<p id="heading" class="steptext">&nbsp; Connect the trimble Wi-Fi connection.</p>
+	<div id="main" style="visibility: hidden;">
+		<div id="main1" style= "position:absolute;height:500px;width: 500px;top:-45px;left:27px;">
+			<div id="main1-1">
+				<div id="main1-2">
+					<div id="desktop"style="visibility:hidden">
+						<img src="images/dsktpicons.png" style="position: absolute;top: 10px;left: 9px;width: 50px;height: 239px;" alt="" />
+						<div id="connect" style="position: absolute;left: 456px;top: 153px;width: 224px;height: 271px;border-left: 2px solid;border-top: 2px solid;visibility: hidden;">
+							<div style="position:absolute;left: -2px;top: -178px;width: 225px;height: 257px;border-bottom:2px solid">
+								<img src="images/wifi.png" style="position:absolute;left:8px;top: 180px;width: 23px;height: 23px;" alt="" />
+								<p style="position:absolute;left: 31px;top: 173px;font-weight: bold;font-size: 10px;">BASE</p>
+								<p style="position:absolute;left: 31px;top: 185px;font-size: 10px;">Secured</p>
+								<p style="position:absolute;left: 31px;top: 200px;font-size: 9px;">This WiFi uses an older security <br> standard that might not protect you</p>
+								<div style="position:absolute;left: 31px;top: 234px;border: 1px solid;width: 6px;height: 6px;"></div>
+								<p style="position:absolute;left: 42px;top: 223px;font-size: 9px;">Connect automatically</p>
+							</div>
+							<button id="Wificonnect" style="position:absolute;left: 149px;top: 63px;font-size: 8px;width: 64px;height: 14px;">Connect</button>
+							<div id="wifi" style="position:absolute;left: -2px;top: 213px;width: 60px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/wifi.png" style="position:absolute;left: 6px;top: 0px;width: 23px;height: 23px;" alt="" />
+								<p style="position:absolute;left: 8px;top: 13px;font-weight: bold;font-size: 9px;">Wi-Fi</p>
+							</div>
+							<div id="flight" style="position:absolute;left: 60px;top: 213px;width: 63px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/flight.png" style="position:absolute;left: 1px;top: 0px;width: 26px;height: 26px;" alt="" />
+								<p style="position:absolute;left: 1px;top: 13px;font-weight: bold;font-size: 9px;width: 200px;">Flight mode</p>
+							</div>
+							<div id="hotspot" style="position:absolute;left: 122px;top: 213px;width: 60px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/hotspot.png" style="position:absolute;left: 5px;top: 0px;width: 20px;height: 20px;" alt="" />
+								<p style="position:absolute;left: 6px;top: 13px;font-weight: bold;font-size: 9px;">Mobile hotspot</p>
+							</div>
+						</div>
+					</div>
+					<div id="server"style="visibility:hidden">
+						<p style="position:absolute;left: 26px;top: -10px;font-size:10px;border-right: 2px solid;padding-right: 6px;padding-top: 1px;height: 20px;width: 101px;">New Tab</p>
+							<img src="images/browser-chrome.png" style="position: absolute;top:2px;left:9px;width: 13px;" alt="" />
+							<img src="images/x.png" style="position: absolute;top:2px;left: 118px;width: 13px;" alt="" />
+							<img src="images/plus.png" style="position: absolute;top:2px;left: 138px;width: 13px;" alt="" />
+							<img src="images/cmd.png" style="position: absolute;top: 4px;left: 598px;width: 80px;" alt="" />
+							<img src="images/prfl.png" style="position: absolute;top: 26px;left: 619px;width: 58px;height: 18px;" alt="" />
+							<img src="images/google.png" style="position: absolute;top: 114px;left: 226px;width: 231px;height: 65px;" alt="" />
+							<div id="search" style="border: 3px solid;position:absolute;top: 191px;left: 165px;width: 332px;height:16px;border-radius: 21px;"></div>
+							<img src="images/search.png" style="position: absolute;top: 195px;left: 173px;width: 13px;height: 13px;" alt="" />
+							<img id="trimble" src="images/trimble.png" style="position: absolute;top: 225px;left: 291px;width: 40px;height: 39px;" alt="" />
+							<img src="images/circleplus.png"  style="position: absolute;top: 221px;left: 349px;width: 46px;height: 41px;" alt="" />
+							<p  style="position:absolute;left: 291px;top: 250px;font-size:10px;">BASE</p>
+							<p  style="position:absolute;left: 341px;top: 250px;font-size:10px;">Add shortcut</p>
+						<div id="search1" style="border-bottom: 2px solid;position:absolute;top:19px;left:-2px;width:682px;"></div>
+						<img src="images/arrs.png" style="position:absolute;top: 28px;left: 2px;width: 62px;" alt="" />
+						<div id="searchbar" style="border: 3px solid;position:absolute;top:24px;left:69px;width:537px;height:16px;border-radius: 4px;"></div>
+						<div id="search2" style="border-bottom: 2px solid;position:absolute;top:49px;left:-2px;width:682px;"></div>
+					</div>
+					<div id="taskbar" style="position:absolute;top: 425px;left: -2px;border-top:2px solid;width: 682px;visibility:hidden;">
+						<img src="images/windows.png" style="position:absolute;left: 11px;top: 1.5px;height: 14px;" alt="" />
+						<img src="images/search.png" style="position: absolute;left: 36px;top: 2.5px;width: 12px;height: 12px;transform: rotate(90deg);" alt="" />
+						<img src="images/folder2.png" style="position:absolute;left: 56px;top: 0.5px;height: 15px;"  alt="" />
+						<img id="brwsr" src="images/browser-chrome.png" style="position:absolute;left:80px;top: 0.5px;height: 15px;" alt="" />
+						<img src="images/time.png" style="position:absolute;left: 596px;top: 0.5px;width: 74px;" alt="" />
+						<img id="cnctwifi" src="images/nwifi.png" style="position:absolute;left: 577px;top: -2.5px;width: 17px;height: 22px;visibility: hidden;" alt="" />
+						<img id="cnctdwifi" src="images/nwifi.png" style="position:absolute;left: 577px;top: -2.5px;width: 17px;height: 22px;visibility: hidden;"  alt="" />
+						<img src="images/battery-half.png" style="position:absolute;left: 545px;top: 1.5px;width: 14px;height: 14px;"  alt="" />
+						<img src="images/volume-up.png" style="position:absolute;left: 563px;top: 1.5px;width: 13px;height: 13px;"  alt="" />
+						<img src="images/chevron-up.png" style="position:absolute;left: 527px;top: 1.5px;width: 13px;height: 13px;"  alt="" />
+					</div>
+					<div id="main1-3" style="visibility: hidden;" >
+					  <div id="login"style="visibility:hidden;">
+							<h1 style="position: absolute;left: 147px;top: -6px;width: 100px;font-size: 17px;">Login</h1>
+							<p style="position: absolute;left: 147px;top: 22px;font-size:11px;font-weight: bold;">Username:</p>
+							<div style="border:1px solid;width: 59px;height: 11px;position: absolute;left: 218px;top: 34px;"><p id="uname" style="position: absolute;left:0px;top:-11px;font-size: 10px;visibility:hidden">&#8226;&#8226;&#8226;&#8226;&#8226;</p></div>
+							<p style="position: absolute;left: 150px;top:41px;font-size:11px;font-weight: bold;">Password:</p>
+				  			<div style="border: 1px solid;width:123px;height: 11px;position: absolute;left: 218px;top: 53px; "><p id="pswd" style="position: absolute;left:0px;top:-11px;font-size: 10px;visibility:hidden">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p></div>
+							<button id="k1btn">OK</button>
+					  </div>
+					  <div id="main1-4" style="position:absolute;top:-8px;width:10px">
+				  		<button  class="btn" id="butn1" style="top:17px">Receiver Status</button>
+				  		<button  class="btn" i id="butn2" style="top:33px">Sattelites</button>
+							<div id="main1-40" style="visibility:hidden">
+							<button id="butn2-1" style="top: -7px;left: 2px;height: 19px;">General</button>
+							<button id="butn2-2" style="top:10px;left: 2px;height: 19px;">Tracking (Table)</button>
+							<button id="butn2-3" style="top:27px;left: 2px;height: 19px;">Tracking (Graph)</button>
+							<button id="butn2-4" style="top:44px;left: 2px;height: 19px;">Tracking (SkyPlot)</button>
+							<button id="butn2-5" style="top:61px;left: 2px;height: 19px;">Enable/Disable</button>
+							<button id="butn2-6" style="top:78px;left: 2px;height: 19px;">Satellite Almanacs</button>
+							<button id="butn2-7" style="top:95px;left: 2px;height: 19px;">Predicted Elevation</button>
+							<button id="butn2-8" style="top:112px;left: 2px;height: 25px;">Predicted Constellation</button>
+							<button id="butn2-9" style="top:135px;left: 2px;height: 19px;">Current Constellation</button>
+							<button id="butn2-10" style="top:150px;left: 2px;height: 19px;">Ground Track</button>
+							<button id="butn2-11" style="top:166px;left: 2px;height: 19px;">Rise/Set (Table)</button>
+							<button id="butn2-12" style="top:182px;left: 2px;height: 19px;">Rise/Set (Graph)</button>
+						</div>
+				  		<button  class="btn" i id="butn3" style="top:49px">Data Logging</button>
+						<div id="main1-41" style="visibility:hidden">
+							<button id="butn3-1" style="top: -7px;left: 2px;height: 19px;">Summary</button>
+							<button id="butn3-2" style="top:10px;left: 2px;height: 19px;">Data Files</button>
+							<button id="butn3-3" style="top:27px;left: 2px;height: 19px;">RINEX Metadata</button>
+							<button id="butn3-4" style="top:44px;left: 2px;height: 19px;">FTP Push</button>
+							<button id="butn3-5" style="top:61px;left: 2px;height: 19px;">FTP Push log</button>
+						</div>
+				  		<button id="butn4" style="top:65px">Receiver Configuration</button>
+				  		<div id="main1-42"style="visibility:hidden">
+				  			<button id="butn4-1" style="top: -7px;left: 2px;height: 19px;">Summary</button>
+				  			<button id="butn4-2" style="top:10px;left: 2px;height: 19px;">Antenna</button>
+				  			<button id="butn4-3" style="top:27px;left: 2px;height: 19px;">Reference station</button>
+				  			<button id="butn4-4" style="top:44px;left: 2px;height: 19px;">Vector</button>
+				  			<button id="butn4-5" style="top:61px;left: 2px;height: 19px;">Tracking</button>
+				  			<button id="butn4-6" style="top:78px;left: 2px;height: 19px;">Correction control</button>
+				  			<button id="butn4-7" style="top:96px;left: 2px;height: 19px;">Position</button>
+				  			<button id="butn4-8" style="top:113px;left: 2px;height: 19px;">Position monitering</button>
+				  			<button id="butn4-9" style="top:130px;left: 2px;height: 19px;">General</button>
+				  			<button id="butn4-10" style="top:148px;left: 2px;height: 19px;">Application files</button>
+				  			<button id="butn4-11" style="top:165px;left: 2px;height: 19px;">Reset</button>
+				  			<button id="butn4-12" style="top: 182px;left: 2px;height: 19px;">Default language</button>
+				  		</div>
+				  		<div id="main1-43" style="position:absolute;top:-104px;">
+				  			<button id="butn5" style="top:186px;font-size:9px;">I/O Configuration</button>
+				  			<button id="butn6" style="top:202px;font-size:9px;">Bluetooth</button>
+				  			<button id="butn7" style="top:218px;font-size:9px;">Radio</button>
+				  			<button id="butn8" style="top:234px;font-size:9px;">MSS Correction</button>
+				  			<button id="butn9" style="top:250px;font-size:9px;">Network Configuration</button>
+				  			<button id="butn10" style="top:266px;font-size:9px;">Wi-Fi</button>
+				  			<button id="butn11" style="top:282px;font-size:9px;">Security</button>
+				  			<button id="butn12" style="top:298px;font-size:9px;">Firmware</button>
+				  			<button id="butn13" style="top:314px;font-size:9px;">Help</button>
+				  		</div>
+					  </div>
+					  <div id="main1-5" style="visibility:hidden">
+				  		<h1 style="position: absolute;left: 140px;top: -3px;font-size: 14px;width: 185px;">Antenna Configuration:</h1>
+				  		<div style="position:absolute;left: 129px;top: 4px;width:232px">
+				  			<p style="position: absolute;left:121px;top:20px;font-size:small">Antenna Type:</p>
+				  			<p style="position: absolute;left:58px;top:38px;font-size:small">Antenna Serial Number:</p>
+				  			<p style="position: absolute;left:11px;top:59px;font-size:small">Antenna Measurement Method:</p>
+				  			<p style="position: absolute;left:86px;top:79px;font-size:small">Antenna Height[m]:</p>
+				  			<div style="border:1px solid;width: 59px;height: 11px;position: absolute;left: 218px;top: 34px;"></div>
+				  			<div style="border: 1px solid;width:59px;height: 11px;position: absolute;left: 218px;top: 53px; "></div>
+				  			<p style="position: absolute;left: 219px;top: 24px;font-size: 10px;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p>
+				  			<p style="  position: absolute;left: 219px;top: 42.5px;font-size: 10px;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p>
+							<p id="rtht"  style="visibility: hidden;position:absolute;left:388px;top:74px;">&#9989;</p>
+							<p id="wrht"  style="visibility: hidden;position:absolute;left:388px;top:74px;">&#10060;</p>
+							<input id="ht" style=" border: 1px solid;position: absolute;left: 218px;top: 94px;width:96x;height: 12px; " type="text" required maxlength="4" autocomplete="off">
+							<button id="chk" style="position:absolute;left: 391px;top: 94px;width: 36px;height: 16px;border-radius: 5px;visibility: hidden;">Check</button>
+							<button id="rslt" style="position:absolute;left: 391px;top: 94px;width: 36px;height: 16px;border-radius: 5px;visibility: hidden;">Result</button>
+				  			<select name="optns" id="optns" style="border: 1px solid;position: absolute;left:218px;top: 73px;width:239px;height: 17px;">
+								<option value=""></option>
+								<option value="Bottom of antenna mount" id="optn1">Bottom of antenna mount</option>
+								<option value="Bottom of Quick Release" disabled>Bottom of Quick Release</option>
+								<option value="Lever of SPS985 Extension" disabled>Lever of SPS985 Extension</option>
+								<option value="Lever of SPS985 Extension with QR" disabled>Lever of SPS985 Extension with QR</option>
+								<option value="Antenna Phase Center" disabled>Antenna Phase Center</option>
+				  			</select>
+						</div>
+				  		<img src="images/hd.png" style="position: absolute;left: 336px;top: 138px;max-width: 51%;" alt=""> 
+				  		<div style="position:absolute;left: 154px;top: 38px;">
+				  			<button id="kbtn1" style="font-family:verdana;position:absolute;left: 10px;top: 190px;width: 20px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  		 	OK</button>
+				  			<button style="font-family:verdana;position:absolute;left: 28px;top: 190px;width: 39px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  		 	Cancel</button>
+						</div>
+					  </div>
+					  <div id="main1-6" style="visibility:hidden">
+				  		<h1 style="position: absolute;left:10px;top:-3px;font-size:14px">Reference Station</h1>
+				  		<div style="position: absolute;top:-31px;width:112px">
+				  			<div style=" border: 1px solid;position: absolute;left:106px;top: 60px;width: 35px;height: 14px; font-size: 12px;text-align: center;">29</div>
+				  			<div style=" border: 1px solid;position: absolute;left: 106px;top: 78px;width: 35px;height: 13px; font-size: 12px;text-align: center; ">0</div>
+				  			<div style=" border: 1px solid;position: absolute;left: 106px;top: 95px;width: 35px;height: 13px; font-size: 12px;text-align: center; ">0</div>
+				  			<div style="border:1px solid;width: 92px;height: 14px;position: absolute;left: 106px;top: 112px;font-size: 12px;text-align: center;">Base</div>
+				  			<div style="border:1px solid;width: 92px;height: 14px;position: absolute;left: 106px;top: 131px;font-size: 12px;text-align: center;">base</div>
+				  			<p style="position: absolute;left:49px;top:46px;font-size:small"> CMR ID:</p>
+				  			<p style="position: absolute;left:16px;top:64px;font-size:small"> RTCM 2.x ID:</p>
+				  			<p style="position: absolute;left:16px;top:82px;font-size:small"> RTCM 3.x ID:</p>
+				  			<p style="position: absolute;left:9px;top:100px;font-size:small"> Station Name:</p>
+				  			<p style="position: absolute;left:14px;top:116px;font-size:small">  Station Code:</p>
+				  		</div> 
+				  		<div id="rad" style="position: absolute;top: -33px;">
+				  			<input type="radio" checked style="position: absolute;left:95px;top:153px;">
+				  			<p style="position: absolute;left:114px;top:141px;font-size:small">Geographical</p>
+				  			<input type="radio" disabled style="position: absolute;left:15px;top:152px;">
+				  			<p style="position: absolute;left:34px;top:141px;font-size:small">Cartesian</p>
+						</div>
+						<div style="width: 189px;position:absolute;top: -46px;left: -17px;">
+							<p style="position: absolute;left:35px;top:175px;font-size:small"> Reference Latitude:</p>
+							<p style="position: absolute;left:24px;top:193px;font-size:small"> Reference Longitude:</p>
+							<p style="position: absolute;left:42px;top:212px;font-size:small"> Reference Height:</p>
+							<div style="width:100px;position:absolute;top: 1px;left: 27px;">
+								<div style=" border: 1px solid;position: absolute;left: 143px;top: 189px;width: 35px;height: 13px;font-size: 12px;text-align: center;">12<p style="position: absolute;top:-15px;left:37px"> &#176;</p></div>
+								<div style="border: 1px solid;position: absolute;left: 189px;top: 189px;width: 27px;height: 13px;font-size: 12px;text-align: center; ">51<p style="position: absolute;top:-15px;left:29px"> &#39;</p></div>
+			    				<div style="border:1px solid;width: 63px;height: 13px;position: absolute;left: 227px;top: 189px;font-size: 12px;text-align: center;">49.76444<p style="position: absolute;top:-16px;left:65px">	&#34;</p></div>
+								<div id="rad1">
+									<input type="radio" checked style="position: absolute;left:298px;top:207px;">
+									<p style="position: absolute;left:317px;top:175px;font-size:11px;">N<span style="font-size:18px;">O</span>S</p>
+								</div>
+								<div id="rad2">
+				  					<input type="radio" checked style="position: absolute;left:298px;top:189px;">
+				  					<p style="position: absolute;left:317px;top:193px;font-size:11px;">E<span style="font-size:18px;">O</span>W</p>
+				  				</div>
+								<div style=" border: 1px solid;position: absolute;left: 143px;top: 208px;width: 35px;height: 13px; font-size: 12px;text-align: center;">74<p style="position: absolute;top:-15px;left:37px"> &#176;</p></div>
+								<div style=" border: 1px solid;position: absolute;left: 189px;top: 208px;width: 27px;height: 13px; font-size: 12px;text-align: center; ">55<p style="position: absolute;top:-15px;left:29px"> &#39;</p></div>
+								<div style="border:1px solid;width: 63px;height: 13px;position: absolute;left: 227px;top: 208px;font-size: 12px;text-align: center;">1.38309<p style="position: absolute;top:-16px;left:65px">	&#34;</p></div>
+								<div id="refht" style=" border: 1px solid;position: absolute;left: 143px;top: 227px;width: 55px;height: 13px; font-size: 12px;text-align: center;">-84.805</div>
+								<p style="position: absolute;left:203px;top:213px;font-size:small">[m]</p>
+								<button id="hrbtn" style="font-family:verdana;position:absolute;left: 141px;top: 245px;width: 30px;height: 15px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  				Here</button>
+				  				<button style="font-family:verdana;position:absolute;left:141px;top: 262px;width: 47px;height: 15px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+								Average</button>
+							</div>
+						</div>
+						<div style="position: absolute;top:224px;left:10px;">
+							<p style="font-size: 11px;font-weight:bold">Position Averaging</p>
+							<div>
+								<p style="font-size: 10px;font-weight:bold;margin-top: -10px;">Current Position:</p>
+								<table style="position: absolute;top:35px;left:29px">
+									<tr>
+										<td class="rs">Lat</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>N</td>
+									</tr>
+									<tr>
+										<td class="rs">Lon</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>E</td>
+									</tr>
+									<tr >
+										<td class="rs">Hgt</td>
+										<td class="rs">-1.854[m]</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<p style="font-size: 10px;font-weight:bold;margin-top:52px;">Average Position:</p>
+								<table style="position: absolute;top: 102px;left:29px">
+									<tr>
+										<td class="rs">Time</td>
+										<td class="rs">0s</td>
+									</tr>
+									<tr>
+										<td class="rs">Lat</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>N</td>
+									</tr>
+									<tr>
+										<td class="rs">Lon</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>E</td>
+									</tr>
+									<tr >
+										<td class="rs">Hgt</td>
+										<td class="rs">-1.854[m]</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<button style="position:absolute;top:395px;left:7px;width:84px;height:15px;">Reset Average</button>
+						<p style="position:absolute;top:401px;left:12px;font-size:10px;width:76px">Auto Average:</p>
+						<input type="checkbox" disabled style="position: absolute;left:84px;top:410px">
+						<div style="position:absolute;top:236px;left:0px">
+							<button id="kbtn2"style="font-family:verdana;position:absolute;left: 10px;top: 190px;width: 20px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">OK</button>
+							<button style="font-family:verdana;position:absolute;left: 35px;top: 190px;width: 39px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">Cancel</button>
+						</div>
+					  </div>
+					  <div id="main1-7" style="visibility:hidden">
+						<div style="position:absolute;left: -135px;top: 1px;">
+						<h1 style="position: absolute;left:144px;top:-4px;font-size:14px;width:118px;">Data Logging</h1>
+						<table id="tabdl">
+							<tr>
+								<th class="dl" scope="">File System</th>
+								<th class="dl" scope="">Size</th>
+								<th class="dl" colspan="2" scope="">Available</th>
+								<th class="dl" scope="">Auto Delete</td>
+								<th class="dl" style="padding-left:2px" scope=""></th>
+							</tr>
+							<tr>
+								<th class="dl" scope="">/Internal</th>
+								<td class="dl">4 GB</td>
+								<td class="dl">2.471 GB</td>
+								<td class="dl">62%</td>
+								<td class="dl"><input type="checkbox" disabled></td>
+								<td class="dl" style="padding-left:2px"><span style="border:1px solid;border-radius:2px;">Format</span></td>
+							</tr>
+							<tr>
+								<th class="dl" scope="">/External</th>
+								<td class="dl"></td>
+								<td class="dl"></td>
+								<td class="dl"></td>
+								<td class="dl"><input type="checkbox" disabled></td>
+								<td class="dl" style="padding-left:2px"></td>
+							</tr>
+						</table>
+						<table id="tabdl1" style="visibility:hidden">
+							<tr>
+								<th class="dl">Session</th>
+								<th class="dl">Schedule</th>
+								<th class="dl">Status</th>
+								<th class="dl">Enable</th>
+							</tr>
+							<tr>
+								<td class="dl1" style="font-size:10px;">
+									<span style="font-weight: bold;font-size:10px">DEFAULT</span><br>
+									Measurments 0.1 Sec.<br>Positions 0.1 Sec.
+								</td>
+								<td class="dl3">Manual<br>1440 Min.</td>
+								<td class="dl3">Disabled</td>
+								<td><input type="checkbox" id="dlc" style="position: absolute;left:240px;top:33px"></td>
+							</tr>
+							<tr>
+								<td class="dl2" style="font-size:10px;padding-bottom: 5px;"><span style="border:1px solid;border-radius:2px;">Configure</span></td>
+								<td class="dl3"></td>
+								<td class="dl3"></td>
+							</tr>
+						</table>
+						<table id="tabdl2" style="visibility:hidden">
+							<tr>
+								<th class="dl">Session</th>
+								<th class="dl">Schedule</th>
+								<th class="dl">Status</th>
+								<th class="dl">Enable</th>
+							</tr>
+							<tr>
+								<td class="dl1" style="font-size:10px;">
+									<span style="font-weight: bold;font-size:10px">DEFAULT</span><br>
+									Measurments 0.1 Sec.<br>Positions 0.1 Sec.
+								</td>
+								<td class="dl3">Manual<br>1440 Min.</td>
+								<td class="dl3">Logging<br><span style="font-weight:bold;">/Internal/2022/08/01/DEFAULT/<br>Trim202208010620.T02</span></td>
+								<td><input type="checkbox" id="dlc1" style="position: absolute;left:407px;top:33px"></td>
+							</tr>
+							<tr>
+								<td class="dl2" style="font-size:10px;padding-bottom: 5px;"><span style="border:1px solid;border-radius:2px;">Configure</span></td>
+								<td class="dl3"></td>
+								<td class="dl3"></td>
+							</tr>
+						</table>
+						<div id="prmpt" style="visibility:hidden;">
+							<p>Disable Session DEFAULT</p>
+							<button id="kbtn3">OK</button>
+							<button id="cnclbtn">Cancel</button>
+						</div>
+					  </div>
+						</div>
+						<div id="main1-8" style="visibility:hidden">
+							<p style="margin-left: 25px;top:-10px">Satellite Disable/Enable</p>
+							<img id="sat-img" src="./images/enabled.png" alt="" style="position:absolute;left:23px;top:42px">
+							<button class="sat-btn" id="butn1-81" style="top: 399px;left: 19px;height: 19px;">Enable all</button>
+							<button class="sat-btn" id="butn1-82" style="top:399px;left: 86px;height: 19px;">Ignore Health all</button>
+							<button class="sat-btn" id="butn1-83" style="top:399px;left: 189px;height: 19px;font-weight: 500;">Disable all</button>
+							<button class="sat-btn" id="butn1-84" style="top:420px;left: 19px;height: 19px;">OK</button>
+							<button class="sat-btn" id="butn1-85" style="top:420px;left: 51px;height: 19px;">Cancel</button>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="simsubscreen" id="canvas10" style="visibility:hidden;">
+<p id="status" style="position: absolute;left:0px;top: 177px;font-size: 36px;font-weight: 700;color: #444444a1;text-align: center;"></p>
+
+</div> 
+<div class="simsubscreen" id="canvas11" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;9&nbsp;</span>
+<p class="steptext">&nbsp;Take out the rover stand and join them together.</p>
+<img id="can10-0" style="position:absolute; left:150px; top:320px;max-width:380px;width:100%;transition: transform 0.5s, opacity 0.5s;" src="images/instrumentinsidebag.png" alt="" />
+<img src="./images/roverStandUp.png" alt="" id="can10-1" style="position:absolute;left: 311px;top: 32px;visibility:hidden">
+<img id="can10-2" src="./images/roverStandDown.png" alt="" style="position:absolute;left: 349px;top: 290px;visibility:hidden">
+</div> 
+<div class="simsubscreen" id="canvas12" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;10&nbsp;</span>
+<p class="steptext">&nbsp;Take out the rover head and insert the battery</p>
+<img id="can11-0" style="position:absolute; left:245px; top:135px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwnbattery.png" alt="" />	
+	<img id="can11-1" style="position: absolute; left: 550px; top: 126px; max-width: 18%; width: 100%; visibility: hidden;" src="images/handwbattery.png" alt="" />
+	<img id="can11-2" style="position:absolute; left:245px; top:134px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwbatteryclosed.png" alt="" />
+	<img id="can11-3" style="position:absolute; left:245px; top:134px;max-width:20%;width:100%;" src="images/headnolid.png" alt="" />
+	<img id="can11-4" style="position:absolute; left:290.5px; top:213px;max-width:8%;width:100%;" src="images/headlid.png" alt="" />
+	<img id="can11-5" style="position:absolute; left:245px; top:135px;max-width:20%;width:100%;visibility:hidden;" src="images/hdwnlid.png" alt="" />
+	<img id="can11-6" style="position:absolute; left:285px; top:236.5px;max-width:9.5%;width:100%;visibility:hidden;" src="images/hdlidopen.png" alt="" />
+</div> 
+<div class="simsubscreen" id="canvas13" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;12&nbsp;</span>
+<p class="steptext">&nbsp;Fix the rover head on to the rover stand</p>
+<img id="can12-0" style="position:absolute; left:72px; top:135px;max-width:18%;width:100%;visibility:hidden;" src="images/hd.png" alt="" />
+	<img id="can12-1" style="position:absolute; left:-10px; top:133px;max-width:29%;width:100%;visibility:hidden;" src="images/hdwhand.png" alt="" />
+	<img id="can12-2" style="position:absolute; left:-10px; top:134px;max-width:29%;width:100%;visibility:hidden;"  src="images/rdwhand.png" alt="" />
+	<img id="can12-12" style="position:absolute; left:-10px; top:134px;max-width:29%;width:100%;visibility:hidden;transition:opacity 0.4s;"  src="images/rdhd.png" alt="" />
+	<img id="can12-11" style="position:absolute; left:-0.5px; top:146px;max-width:27%;width:100%;visibility:hidden;transition: opacity 0.4s;"  src="images/rd.png" alt="" />
+	<img id="can12-13" style="position:absolute;left: 50px;top: 33px;visibility:hidden;transform:scale(0.5);transition: transform 0.8s, left 0.8s"  src="images/finalRoverStand.png" alt="" />
+	<p id="note22" class="note" style="position:absolute; left:400px; top:250px;visibility:hidden;">Height of the instrument is: 2m<br><span style="display:inline-block;padding-top:8px;">Make a note of this height for data logging</span></p>
+</div> 
+<div class="simsubscreen" id="canvas14" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;13&nbsp;</span>
+<p class="steptext">&nbsp;Now take the rover to the required point and attach a bipod to the rover stand.
+	<img id="can13-6" style="position:absolute;left: 288.5px;top: 448px;width: 123px;"  src="images/box.png" alt="" />
+	<img id="can13-1" style="position:absolute;left: 50px;top: 33px;transition: left 1s linear;"  src="images/finalRoverStand.png" alt="" />
+	<img id="can13-2" style="position:absolute;left: 29px;top: 285px;visibility: hidden;transition: left 1s linear;"  src="images/handRover1.png" alt="" />
+</p>
+	<img id="can13-3" style="position:absolute;left: 221.5px;top: 262px;visibility: hidden;transition: left 0.8s;"  src="images/bipodWithHand.png	" alt="" />
+	<img id="can13-4" style="position:absolute;left: 271.5px;top: 262px;visibility: hidden;"  src="images/bipodWithoutHand.png" alt="" />
+	<img id="can13-5" style="position:absolute;left: 271.5px;top: 262px;visibility: hidden;"  src="images/handRotate.png" alt="" />
+	<!--271.5L 262T-->
+</p>
+	
+</div> 
+<div class="simsubscreen" id="canvas15" style="visibility:hidden;">
+<strong class="incanvas">STEP</strong>
+<span class="circlebg">&nbsp;14&nbsp;</span>
+<p class="steptext">&nbsp;Using the adjustment screws, level the bipod to make the rover stand truly vertical.</p>
+	<img id="can14-6" style="position:absolute;left: 288.5px;top: 448px;width: 123px;"  src="images/box.png" alt="" />
+	<img id="can14-2" style="position:absolute;left: 250.5px;top: 272px;transform-origin: top;transition: transform 2.5s;"  src="images/bipodLeft.png" alt="" />
+	<img id="can14-1" style="position:absolute;left: 323.5px;top: 33px;"  src="images/finalRoverStand.png" alt="" />
+	<img id="can14-3" style="position:absolute;left: 245.5px;top: 264px;transform-origin: 100% 0%;transition: transform 2.5s"  src="images/bipodRight.png" alt="" />
+	<img id="can14-4" style="position:absolute;left: 297.5px;top: 169px;transform: scale(0.5);visibility: hidden;"  src="images/bubble2.png" alt="" />
+	<img id="can14-5" src="./images/dot.png" alt="" srcset="" style="position: absolute;left: 438.5px;top:393px;visibility: hidden;">
+<img id="can14-7" src="./images/finalStand2.png"  alt="" style="position: absolute;left: 207px;top:31px;transform: rotateY(180deg);visibility: hidden;">
+	<!-- 426.5L 286T -->
+
+	
+</div> 
+<div class="simsubscreen" id="canvas16" style="visibility:hidden;">
+<p id="can15-1" style="position:absolute;left:112px;top:-20px;visibility: hidden;"><strong>Setting up the rover over the required point is completed</strong></p>
+	<img id="can15-3" style="position:absolute;left: 288.5px;top: 448px;width: 123px;visibility: hidden;"  src="images/box.png" alt="" />
+
+<img id="can15-2" src="./images/finalStand2.png"  alt="" style="position: absolute;left: 207px;top:31px;transform: rotateY(180deg);visibility: hidden;">
+
+</p>
+	
+</div> 
+<div class="simsubscreen" id="canvas17" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg" >&nbsp;15&nbsp;</span>
+	<p id="heading2" class="steptext">&nbsp; Connect to Wi-Fi at the rover.</p>
+	<div id="main2-0" style="visibility: hidden;"> 
+		<div id="main2" style= "position:absolute;height:500px;width: 500px;top:-45px;left:27px;">
+			<div id="main2-1">
+				<div id="main2-2">
+					<div id="desktop2"style="visibility:hidden">
+						<img src="images/dsktpicons.png" style="position: absolute;top: 10px;left: 9px;width: 50px;height: 239px;" alt="" />
+						<div id="connect2" style="position: absolute;left: 456px;top: 153px;width: 224px;height: 271px;border-left: 2px solid;border-top: 2px solid;visibility: hidden;">
+							<div style="position:absolute;left: -2px;top: -178px;width: 225px;height: 257px;border-bottom:2px solid">
+								<img src="images/wifi.png" style="position:absolute;left:8px;top: 180px;width: 23px;height: 23px;" alt="" />
+								<p style="position:absolute;left: 31px;top: 173px;font-weight: bold;font-size: 10px;">ROVER</p>
+								<p style="position:absolute;left: 31px;top: 185px;font-size: 10px;">Secured</p>
+								<p style="position:absolute;left: 31px;top: 200px;font-size: 9px;">This WiFi uses an older security <br> standard that might not protect you</p>
+								<div style="position:absolute;left: 31px;top: 234px;border: 1px solid;width: 6px;height: 6px;"></div>
+								<p style="position:absolute;left: 42px;top: 223px;font-size: 9px;">Connect automatically</p>
+							</div>
+							<button id="Wificonnect2" style="position:absolute;left: 149px;top: 63px;font-size: 8px;width: 64px;height: 14px;">Connect</button>
+							<div id="wifi2" style="position:absolute;left: -2px;top: 213px;width: 60px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/wifi.png" style="position:absolute;left: 6px;top: 0px;width: 23px;height: 23px;" alt="" />
+								<p style="position:absolute;left: 8px;top: 13px;font-weight: bold;font-size: 9px;">Wi-Fi</p>
+							</div>
+							<div id="flight2" style="position:absolute;left: 60px;top: 213px;width: 63px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/flight.png" style="position:absolute;left: 1px;top: 0px;width: 26px;height: 26px;" alt="" />
+								<p style="position:absolute;left: 1px;top: 13px;font-weight: bold;font-size: 9px;width: 200px;">Flight mode</p>
+							</div>
+							<div id="hotspot2" style="position:absolute;left: 122px;top: 213px;width: 60px;height: 56px;border-right: 2px solid;border-top:2px solid;">
+								<img src="images/hotspot.png" style="position:absolute;left: 5px;top: 0px;width: 20px;height: 20px;" alt="" />
+								<p style="position:absolute;left: 6px;top: 13px;font-weight: bold;font-size: 9px;">Mobile hotspot</p>
+							</div>
+						</div>
+					</div>
+					<div id="server2"style="visibility:hidden">
+						<p style="position:absolute;left: 26px;top: -10px;font-size:10px;border-right: 2px solid;padding-right: 6px;padding-top: 1px;height: 20px;width: 101px;">New Tab</p>
+							<img src="images/browser-chrome.png" style="position: absolute;top:2px;left:9px;width: 13px;" alt="" />
+							<img src="images/x.png" style="position: absolute;top:2px;left: 118px;width: 13px;" alt="" />
+							<img src="images/plus.png" style="position: absolute;top:2px;left: 138px;width: 13px;" alt="" />
+							<img src="images/cmd.png" style="position: absolute;top: 4px;left: 598px;width: 80px;" alt="" />
+							<img src="images/prfl.png" style="position: absolute;top: 26px;left: 619px;width: 58px;height: 18px;" alt="" />
+							<img src="images/google.png" style="position: absolute;top: 114px;left: 226px;width: 231px;height: 65px;" alt="" />
+							<div id="search2" style="border: 3px solid;position:absolute;top: 191px;left: 165px;width: 332px;height:16px;border-radius: 21px;"></div>
+							<img src="images/search.png" style="position: absolute;top: 195px;left: 173px;width: 13px;height: 13px;" alt="" />
+							<img id="trimble2" src="images/trimble.png" style="position: absolute;top: 225px;left: 291px;width: 40px;height: 39px;" alt="" />
+							<img src="images/circleplus.png"  style="position: absolute;top: 221px;left: 349px;width: 46px;height: 41px;" alt="" />
+							<p  style="position:absolute;left: 291px;top: 250px;font-size:10px;">ROVER</p>
+							<p  style="position:absolute;left: 341px;top: 250px;font-size:10px;">Add shortcut</p>
+						<div id="search12" style="border-bottom: 2px solid;position:absolute;top:19px;left:-2px;width:682px;"></div>
+						<img src="images/arrs.png" style="position:absolute;top: 28px;left: 2px;width: 62px;" alt="" />
+						<div id="searchbar2" style="border: 3px solid;position:absolute;top:24px;left:69px;width:537px;height:16px;border-radius: 4px;"></div>
+						<div id="search22" style="border-bottom: 2px solid;position:absolute;top:49px;left:-2px;width:682px;"></div>
+					</div>
+					<div id="taskbar2" style="position:absolute;top: 425px;left: -2px;border-top:2px solid;width: 682px;visibility:hidden;">
+						<img src="images/windows.png" style="position:absolute;left: 11px;top: 1.5px;height: 14px;" alt="" />
+						<img src="images/search.png" style="position: absolute;left: 36px;top: 2.5px;width: 12px;height: 12px;transform: rotate(90deg);" alt="" />
+						<img src="images/folder2.png" style="position:absolute;left: 56px;top: 0.5px;height: 15px;" alt="" />
+						<img id="brwsr2" src="images/browser-chrome.png" style="position:absolute;left:80px;top: 0.5px;height: 15px;" alt="" />
+						<img src="images/time.png" style="position:absolute;left: 596px;top: 0.5px;width: 74px;" alt="" />
+						<img id="cnctwifi2" src="images/nwifi.png" style="position:absolute;left: 577px;top: -2.5px;width: 17px;height: 22px;visibility: hidden;" alt="" />
+						<img id="cnctdwifi2" src="images/nwifi.png" style="position:absolute;left: 577px;top: -2.5px;width: 17px;height: 22px;visibility: hidden;" alt="" />
+						<img src="images/battery-half.png" style="position:absolute;left: 545px;top: 1.5px;width: 14px;height: 14px;" alt="" />
+						<img src="images/volume-up.png" style="position:absolute;left: 563px;top: 1.5px;width: 13px;height: 13px;" alt="" />
+						<img src="images/chevron-up.png" style="position:absolute;left: 527px;top: 1.5px;width: 13px;height: 13px;" alt="" />
+					</div>
+					<div id="main2-3" style="visibility: hidden;" >
+					  <div id="login2"style="visibility:hidden;">
+							<h1 style="position: absolute;left: 147px;top: -6px;width: 100px;font-size: 17px;">Login</h1>
+							<p style="position: absolute;left: 147px;top: 22px;font-size:11px;font-weight: bold;">Username:</p>
+							<div style="border:1px solid;width: 59px;height: 11px;position: absolute;left: 218px;top: 34px;"><p id="uname2" style="position: absolute;left:0px;top:-11px;font-size: 10px;visibility:hidden">&#8226;&#8226;&#8226;&#8226;&#8226;</p></div>
+							<p style="position: absolute;left: 150px;top:41px;font-size:11px;font-weight: bold;">Password:</p>
+				  			<div style="border: 1px solid;width:123px;height: 11px;position: absolute;left: 218px;top: 53px; "><p id="pswd2" style="position: absolute;left:0px;top:-11px;font-size: 10px;visibility:hidden">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p></div>
+							<button id="k1btn2">OK</button>
+					  </div>
+					  <div id="main2-4" style="position:absolute;top:-8px;width:10px">
+				  		<button  class="btn" id="butn12" style="top:17px">Receiver Status</button>
+				  		<button  class="btn" id="butn22" style="top:33px">Sattelites</button>
+							<div id="main2-40" style="visibility:hidden">
+							<button id="butn22-1" style="top: -7px;left: 2px;height: 19px;">General</button>
+							<button id="butn22-2" style="top:10px;left: 2px;height: 19px;">Tracking (Table)</button>
+							<button id="butn22-3" style="top:27px;left: 2px;height: 19px;">Tracking (Graph)</button>
+							<button id="butn22-4" style="top:44px;left: 2px;height: 19px;">Tracking (SkyPlot)</button>
+							<button id="butn22-5" style="top:61px;left: 2px;height: 19px;">Enable/Disable</button>
+							<button id="butn22-6" style="top:78px;left: 2px;height: 19px;">Satellite Almanacs</button>
+							<button id="butn22-7" style="top:95px;left: 2px;height: 19px;">Predicted Elevation</button>
+							<button id="butn22-8" style="top:112px;left: 2px;height: 25px;">Predicted Constellation</button>
+							<button id="butn22-9" style="top:135px;left: 2px;height: 19px;">Current Constellation</button>
+							<button id="butn22-10" style="top:150px;left: 2px;height: 19px;">Ground Track</button>
+							<button id="butn22-11" style="top:166px;left: 2px;height: 19px;">Rise/Set (Table)</button>
+							<button id="butn22-12" style="top:182px;left: 2px;height: 19px;">Rise/Set (Graph)</button>
+						</div>
+				  		<button  class="btn" id="butn32" style="top:49px">Data Logging</button>
+						<div id="main2-41" style="visibility:hidden">
+							<button id="butn3-12" style="top: -7px;left: 2px;height: 19px;">Summary</button>
+							<button id="butn3-22" style="top:10px;left: 2px;height: 19px;">Data Files</button>
+							<button id="butn3-32" style="top:27px;left: 2px;height: 19px;">RINEX Metadata</button>
+							<button id="butn3-42" style="top:44px;left: 2px;height: 19px;">FTP Push</button>
+							<button id="butn3-52" style="top:61px;left: 2px;height: 19px;">FTP Push log</button>
+						</div>
+				  		<button id="butn42" style="top:65px">Receiver Configuration</button>
+				  		<div id="main2-42"style="visibility:hidden">
+				  			<button id="butn4-12" style="top: -7px;left: 2px;height: 19px;">Summary</button>
+				  			<button id="butn4-22" style="top:10px;left: 2px;height: 19px;">Antenna</button>
+				  			<button id="butn4-32" style="top:27px;left: 2px;height: 19px;">Reference station</button>
+				  			<button id="butn4-42" style="top:44px;left: 2px;height: 19px;">Vector</button>
+				  			<button id="butn4-52" style="top:61px;left: 2px;height: 19px;">Tracking</button>
+				  			<button id="butn4-62" style="top:78px;left: 2px;height: 19px;">Correction control</button>
+				  			<button id="butn4-72" style="top:96px;left: 2px;height: 19px;">Position</button>
+				  			<button id="butn4-82" style="top:113px;left: 2px;height: 19px;">Position monitering</button>
+				  			<button id="butn4-92" style="top:130px;left: 2px;height: 19px;">General</button>
+				  			<button id="butn4-102" style="top:148px;left: 2px;height: 19px;">Application files</button>
+				  			<button id="butn4-112" style="top:165px;left: 2px;height: 19px;">Reset</button>
+				  			<button id="butn4-122" style="top: 182px;left: 2px;height: 19px;">Default language</button>
+				  		</div>
+				  		<div id="main2-43" style="position:absolute;top:-104px;">
+				  			<button id="butn52" style="top:186px;font-size:9px;">I/O Configuration</button>
+				  			<button id="butn62" style="top:202px;font-size:9px;">Bluetooth</button>
+				  			<button id="butn72" style="top:218px;font-size:9px;">Radio</button>
+				  			<button id="butn82" style="top:234px;font-size:9px;">MSS Correction</button>
+				  			<button id="butn92" style="top:250px;font-size:9px;">Network Configuration</button>
+				  			<button id="butn102" style="top:266px;font-size:9px;">Wi-Fi</button>
+				  			<button id="butn112" style="top:282px;font-size:9px;">Security</button>
+				  			<button id="butn12" style="top:298px;font-size:9px;">Firmware</button>
+				  			<button id="butn132" style="top:314px;font-size:9px;">Help</button>
+				  		</div>
+					  </div>
+					  <div id="main2-5" style="visibility:hidden">
+				  		<h1 style="position: absolute;left: 140px;top: -3px;font-size: 14px;width: 185px;">Antenna Configuration:</h1>
+				  		<div style="position:absolute;left: 129px;top: 4px;width:232px">
+				  			<p style="position: absolute;left:121px;top:20px;font-size:small">Antenna Type:</p>
+				  			<p style="position: absolute;left:58px;top:38px;font-size:small">Antenna Serial Number:</p>
+				  			<p style="position: absolute;left:11px;top:59px;font-size:small">Antenna Measurement Method:</p>
+				  			<p style="position: absolute;left:86px;top:79px;font-size:small">Antenna Height[m]:</p>
+				  			<div style="border:1px solid;width: 59px;height: 11px;position: absolute;left: 218px;top: 34px;"></div>
+				  			<div style="border: 1px solid;width:59px;height: 11px;position: absolute;left: 218px;top: 53px; "></div>
+				  			<p style="position: absolute;left: 219px;top: 24px;font-size: 10px;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p>
+				  			<p style="  position: absolute;left: 219px;top: 42.5px;font-size: 10px;">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</p>
+							<p id="rtht2"  style="visibility: hidden;position:absolute;left:388px;top:74px;">&#9989;</p>
+							<p id="wrht2"  style="visibility: hidden;position:absolute;left:388px;top:74px;">&#10060;</p>
+							<input id="ht2" style=" border: 1px solid;position: absolute;left: 218px;top: 94px;width:96x;height: 12px; " type="text" required maxlength="4" autocomplete="off">
+							<button id="chk2" style="position:absolute;left: 391px;top: 94px;width: 36px;height: 16px;border-radius: 5px;visibility: hidden;">Check</button>
+							<button id="rslt2" style="position:absolute;left: 391px;top: 94px;width: 36px;height: 16px;border-radius: 5px;visibility: hidden;">Result</button>
+				  			<select name="optns" id="optns2" style="border: 1px solid;position: absolute;left:218px;top: 73px;width:239px;height: 17px;">
+								<option value=""></option>
+								<option value="Bottom of antenna mount" id="optn12">Bottom of antenna mount</option>
+								<option value="Bottom of Quick Release" disabled>Bottom of Quick Release</option>
+								<option value="Lever of SPS985 Extension" disabled>Lever of SPS985 Extension</option>
+								<option value="Lever of SPS985 Extension with QR" disabled>Lever of SPS985 Extension with QR</option>
+								<option value="Antenna Phase Center" disabled>Antenna Phase Center</option>
+				  			</select>
+						</div>
+				  		<img src="images/hd.png" style="position: absolute;left: 336px;top: 138px;max-width: 51%;" alt=""> 
+				  		<div style="position:absolute;left: 154px;top: 38px;">
+				  			<button id="kbtn12" style="font-family:verdana;position:absolute;left: 10px;top: 190px;width: 20px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  		 	OK</button>
+				  			<button style="font-family:verdana;position:absolute;left: 28px;top: 190px;width: 39px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  		 	Cancel</button>
+						</div>
+					  </div>
+					  <div id="main2-6" style="visibility:hidden">
+				  		<h1 style="position: absolute;left:10px;top:-3px;font-size:14px">Reference Station</h1>
+				  		<div style="position: absolute;top:-31px;width:112px">
+				  			<div style=" border: 1px solid;position: absolute;left:106px;top: 60px;width: 35px;height: 14px; font-size: 12px;text-align: center;">29</div>
+				  			<div style=" border: 1px solid;position: absolute;left: 106px;top: 78px;width: 35px;height: 13px; font-size: 12px;text-align: center; ">0</div>
+				  			<div style=" border: 1px solid;position: absolute;left: 106px;top: 95px;width: 35px;height: 13px; font-size: 12px;text-align: center; ">0</div>
+				  			<div style="border:1px solid;width: 92px;height: 14px;position: absolute;left: 106px;top: 112px;font-size: 12px;text-align: center;">Base</div>
+				  			<div style="border:1px solid;width: 92px;height: 14px;position: absolute;left: 106px;top: 131px;font-size: 12px;text-align: center;">base</div>
+				  			<p style="position: absolute;left:49px;top:46px;font-size:small"> CMR ID:</p>
+				  			<p style="position: absolute;left:16px;top:64px;font-size:small"> RTCM 2.x ID:</p>
+				  			<p style="position: absolute;left:16px;top:82px;font-size:small"> RTCM 3.x ID:</p>
+				  			<p style="position: absolute;left:9px;top:100px;font-size:small"> Station Name:</p>
+				  			<p style="position: absolute;left:14px;top:116px;font-size:small">  Station Code:</p>
+				  		</div> 
+				  		<div id="rad2" style="position: absolute;top: -33px;">
+				  			<input type="radio" checked style="position: absolute;left:95px;top:153px;">
+				  			<p style="position: absolute;left:114px;top:141px;font-size:small">Geographical</p>
+				  			<input type="radio" disabled style="position: absolute;left:15px;top:152px;">
+				  			<p style="position: absolute;left:34px;top:141px;font-size:small">Cartesian</p>
+						</div>
+						<div style="width: 189px;position:absolute;top: -46px;left: -17px;">
+							<p style="position: absolute;left:35px;top:175px;font-size:small"> Reference Latitude:</p>
+							<p style="position: absolute;left:24px;top:193px;font-size:small"> Reference Longitude:</p>
+							<p style="position: absolute;left:42px;top:212px;font-size:small"> Reference Height:</p>
+							<div style="width:100px;position:absolute;top: 1px;left: 27px;">
+								<div style=" border: 1px solid;position: absolute;left: 143px;top: 189px;width: 35px;height: 13px;font-size: 12px;text-align: center;">12<p style="position: absolute;top:-15px;left:37px"> &#176;</p></div>
+								<div style="border: 1px solid;position: absolute;left: 189px;top: 189px;width: 27px;height: 13px;font-size: 12px;text-align: center; ">51<p style="position: absolute;top:-15px;left:29px"> &#39;</p></div>
+			    				<div style="border:1px solid;width: 63px;height: 13px;position: absolute;left: 227px;top: 189px;font-size: 12px;text-align: center;">49.76444<p style="position: absolute;top:-16px;left:65px">	&#34;</p></div>
+								<div id="rad12">
+									<input type="radio" checked style="position: absolute;left:298px;top:207px;">
+									<p style="position: absolute;left:317px;top:175px;font-size:11px;">N<span style="font-size:18px;">O</span>S</p>
+								</div>
+								<div id="rad22">
+				  					<input type="radio" checked style="position: absolute;left:298px;top:189px;">
+				  					<p style="position: absolute;left:317px;top:193px;font-size:11px;">E<span style="font-size:18px;">O</span>W</p>
+				  				</div>
+								<div style=" border: 1px solid;position: absolute;left: 143px;top: 208px;width: 35px;height: 13px; font-size: 12px;text-align: center;">74<p style="position: absolute;top:-15px;left:37px"> &#176;</p></div>
+								<div style=" border: 1px solid;position: absolute;left: 189px;top: 208px;width: 27px;height: 13px; font-size: 12px;text-align: center; ">55<p style="position: absolute;top:-15px;left:29px"> &#39;</p></div>
+								<div style="border:1px solid;width: 63px;height: 13px;position: absolute;left: 227px;top: 208px;font-size: 12px;text-align: center;">1.38309<p style="position: absolute;top:-16px;left:65px">	&#34;</p></div>
+								<div id="refht2" style=" border: 1px solid;position: absolute;left: 143px;top: 227px;width: 55px;height: 13px; font-size: 12px;text-align: center;">-84.805</div>
+								<p style="position: absolute;left:203px;top:213px;font-size:small">[m]</p>
+								<button id="hrbtn2" style="font-family:verdana;position:absolute;left: 141px;top: 245px;width: 30px;height: 15px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+				  				Here</button>
+				  				<button style="font-family:verdana;position:absolute;left:141px;top: 262px;width: 47px;height: 15px;text-align: center;padding-left: 1px;padding-bottom: 1px;">
+								Average</button>
+							</div>
+						</div>
+						<div style="position: absolute;top:224px;left:10px;">
+							<p style="font-size: 11px;font-weight:bold">Position Averaging</p>
+							<div>
+								<p style="font-size: 10px;font-weight:bold;margin-top: -10px;">Current Position:</p>
+								<table style="position: absolute;top:35px;left:29px">
+									<tr>
+										<td class="rs">Lat</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>N</td>
+									</tr>
+									<tr>
+										<td class="rs">Lon</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>E</td>
+									</tr>
+									<tr >
+										<td class="rs">Hgt</td>
+										<td class="rs">-1.854[m]</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<p style="font-size: 10px;font-weight:bold;margin-top:52px;">Average Position:</p>
+								<table style="position: absolute;top: 102px;left:29px">
+									<tr>
+										<td class="rs">Time</td>
+										<td class="rs">0s</td>
+									</tr>
+									<tr>
+										<td class="rs">Lat</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>N</td>
+									</tr>
+									<tr>
+										<td class="rs">Lon</td>
+										<td class="rs">0<sup>&#176;</sup></td>
+										<td class="rs">0<sup>&#39;</sup></td>
+										<td class="rs">0.00000<sup>&#34;</sup>E</td>
+									</tr>
+									<tr >
+										<td class="rs">Hgt</td>
+										<td class="rs">-1.854[m]</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<button style="position:absolute;top:395px;left:7px;width:84px;height:15px;">Reset Average</button>
+						<p style="position:absolute;top:401px;left:12px;font-size:10px;width:76px">Auto Average:</p>
+						<input type="checkbox" disabled style="position: absolute;left:84px;top:410px">
+						<div style="position:absolute;top:236px;left:0px">
+							<button id="kbtn22"style="font-family:verdana;position:absolute;left: 10px;top: 190px;width: 20px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">OK</button>
+							<button style="font-family:verdana;position:absolute;left: 35px;top: 190px;width: 39px;height: 16px;text-align: center;padding-left: 1px;padding-bottom: 1px;">Cancel</button>
+						</div>
+					  </div>
+					  <div id="main2-7" style="visibility:hidden">
+						<div style="position:absolute;left: -135px;top: 1px;">
+						<h1 style="position: absolute;left:144px;top:-4px;font-size:14px;width:118px;">Data Logging</h1>
+						<table id="tabdl20">
+							<tr>
+								<th class="dl" scope="">File System</th>
+								<th class="dl" scope="">Size</th>
+								<th class="dl" colspan="2" scope="">Available</th>
+								<th class="dl" scope="">Auto Delete</td>
+								<th class="dl" style="padding-left:2px" scope=""></th>
+							</tr>
+							<tr>
+								<th class="dl" scope="">/Internal</th>
+								<td class="dl">4 GB</td>
+								<td class="dl">2.471 GB</td>
+								<td class="dl">62%</td>
+								<td class="dl"><input type="checkbox" disabled></td>
+								<td class="dl" style="padding-left:2px"><span style="border:1px solid;border-radius:2px;">Format</span></td>
+							</tr>
+							<tr>
+								<th class="dl" scope="">/External</th>
+								<td class="dl"></td>
+								<td class="dl"></td>
+								<td class="dl"></td>
+								<td class="dl"><input type="checkbox" disabled></td>
+								<td class="dl" style="padding-left:2px"></td>
+							</tr>
+						</table>
+						<table id="tabdl12" style="visibility:hidden">
+							<tr>
+								<th class="dl">Session</th>
+								<th class="dl">Schedule</th>
+								<th class="dl">Status</th>
+								<th class="dl">Enable</th>
+							</tr>
+							<tr>
+								<td class="dl1" style="font-size:10px;">
+									<span style="font-weight: bold;font-size:10px">DEFAULT</span><br>
+									Measurments 0.1 Sec.<br>Positions 0.1 Sec.
+								</td>
+								<td class="dl3">Manual<br>1440 Min.</td>
+								<td class="dl3">Disabled</td>
+								<td><input type="checkbox" id="dlc2" style="position: absolute;left:240px;top:33px"></td>
+							</tr>
+							<tr>
+								<td class="dl2" style="font-size:10px;padding-bottom: 5px;"><span style="border:1px solid;border-radius:2px;">Configure</span></td>
+								<td class="dl3"></td>
+								<td class="dl3"></td>
+							</tr>
+						</table>
+						<table id="tabdl22" style="visibility:hidden">
+							<tr>
+								<th class="dl">Session</th>
+								<th class="dl">Schedule</th>
+								<th class="dl">Status</th>
+								<th class="dl">Enable</th>
+							</tr>
+							<tr>
+								<td class="dl1" style="font-size:10px;">
+									<span style="font-weight: bold;font-size:10px">DEFAULT</span><br>
+									Measurments 0.1 Sec.<br>Positions 0.1 Sec.
+								</td>
+								<td class="dl3">Manual<br>1440 Min.</td>
+								<td class="dl3">Logging<br><span style="font-weight:bold;">/Internal/2022/08/01/DEFAULT/<br>Trim202208010620.T02</span></td>
+								<td><input type="checkbox" id="dlc12" style="position: absolute;left:407px;top:33px"></td>
+							</tr>
+							<tr>
+								<td class="dl2" style="font-size:10px;padding-bottom: 5px;"><span style="border:1px solid;border-radius:2px;">Configure</span></td>
+								<td class="dl3"></td>
+								<td class="dl3"></td>
+							</tr>
+						</table>
+						<div id="prmpt2" style="visibility:hidden;">
+							<p>Disable Session DEFAULT</p>
+							<button id="kbtn32">OK</button>
+							<button id="cnclbtn2">Cancel</button>
+						</div>
+					  </div>
+					</div>
+					<div id="main2-8" style="visibility:hidden">
+							<p style="margin-left: 25px;top:-10px">Satellite Disable/Enable</p>
+							<img id="sat-img2" src="./images/enabled.png" alt="" style="position:absolute;left:23px;top:42px">
+							<button class="sat-btn" id="butn2-81" style="top: 399px;left: 19px;height: 19px;">Enable all</button>
+							<button class="sat-btn" id="butn2-82" style="top:399px;left: 86px;height: 19px;">Ignore Health all</button>
+							<button class="sat-btn" id="butn2-83" style="top:399px;left: 189px;height: 19px;font-weight: 500;">Disable all</button>
+							<button class="sat-btn" id="butn2-84" style="top:420px;left: 19px;height: 19px;">OK</button>
+							<button class="sat-btn" id="butn2-85" style="top:420px;left: 51px;height: 19px;">Cancel</button>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="simsubscreen" id="canvas18" style="visibility:hidden;">
+	<strong class="incanvas last-step">STEP</strong>
+	<span class="circlebg last-circle" >&nbsp;16&nbsp;</span>
+	<p id="heading4" class="steptext">&nbsp; Import the images captured during the photogrammetry survey.</p>
+	<div class="menu">
+		<div class="menu__options">
+			<button class="menu-btn menu-btn-1 highlight" data-opt="1" >
+				IMPORT
+				
+			</button>
+			<button class="menu-btn menu-btn-2" data-opt="2" disabled>
+				AERIAL TRIANGULATION
+				
+			</button>
+			<button class="menu-btn menu-btn-3" data-opt="3" disabled>
+				UPLOAD GCP FILE
+			</button>
+			<button class="menu-btn menu-btn-4" data-opt="4" disabled>
+				MARK GCP
+			</button>
+			<button class="menu-btn menu-btn-5" data-opt="5" disabled>
+				REOPTIMIZE
+				
+			</button>
+			<button class="menu-btn menu-btn-6" data-opt="6" disabled>
+				GENERATE ORTHOMOSAIC MAP
+			
+			</button>
+		</div>
+		<div class="menu-content">
+			<div class="menu-para menu-data-1">
+				<img class="menu-content-img" src="images/init.JPG" alt="">
+			</div>
+			<div class="menu-para menu-data-2">				
+				<img class="menu-content-img" src="images/import.JPG" alt="">
+			</div>
+			<div class="menu-para menu-data-3">
+				<div class="gcp-container">
+					<span>gcp.csv
+					</span>
+				<table class="gcp-data">
+					<thead>
+						<th>sl</th>
+						<th>northing</th>
+						<th>easting</th>
+						<th>sl</th>
+						<th>lat</th>
+						<th>long</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>gcp1</td>
+							<td>1475811.566</td>
+							<td>468729.035</td>
+							<td>5.463</td>
+							<td>13.349565</td>
+							<td>74.711224</td>
+						</tr>
+						<tr>
+							<td>gcp2</td>
+							<td>1475754.174</td>
+							<td>468791.85</td>
+							<td>4.822</td>
+							<td>13.349047</td>
+							<td>74.711805</td>
+						</tr>
+						<tr>
+							<td>gcp3</td>
+							<td>1475714.4</td>
+							<td>468635.25</td>
+							<td>6.746</td>
+							<td>13.348686</td>
+							<td>74.710359</td>
+						</tr>
+						<tr>
+							<td>gcp4</td>
+							<td>1475790.429</td>
+							<td>468477.109</td>
+							<td>6.317</td>
+							<td>13.349372</td>
+							<td>74.708898</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="gcp-upload">
+					<button class="gcp-upload-btn">UPLOAD</button>
+					<progress class="gcp-progress" value="0" max="100"></progress>
+				</div>
+				<span class="span-upload"></span>
+			</div>
+			</div>	
+			<div class="menu-para menu-data-4">				
+				<img class="menu-content-img-4" src="images/aerial.JPG" alt="">
+				<span class="spot-marker spot-marker-1 menu-para" data-mark=1 title="gcp1">+</span>
+				<span class="spot-marker spot-marker-2 menu-para" data-mark=2 title="gcp2">+</span>
+				<span class="spot-marker spot-marker-3 menu-para" data-mark=3 title="gcp3">+</span>
+				<span class="spot-marker spot-marker-4 menu-para" data-mark=4 title="gcp4">+</span>
+				<div class="spot-overlay menu-para">
+					<div class="spot-div">
+						<img class="spot-img spot-img-1 menu-para" src="images/gcp1.JPG" title="gcp1" alt=""/>
+						<div class="spot-dot spot-dot-1 menu-para" data-dot = 1 title="gcp1"></div>
+					</div>
+					<div class="spot-div">
+						<img class="spot-img spot-img-2 menu-para" src="images/gcp2.JPG" title="gcp2" alt=""/>
+							<div class="spot-dot spot-dot-2 menu-para" data-dot = 2 title="gcp2"></div>
+					</div>
+					<div class="spot-div">
+						<img class="spot-img spot-img-3 menu-para" src="images/gcp3.JPG" title="gcp3" alt=""/>
+							<div class="spot-dot spot-dot-3 menu-para" data-dot = 3 title="gcp3"></div>
+					</div>
+					<div class="spot-div">
+						<img class="spot-img spot-img-4 menu-para" src="images/gcp4.JPG" title="gcp4" alt=""/>
+							<div class="spot-dot spot-dot-4 menu-para" data-dot = 4 title="gcp4"></div>
+					</div>
+					</div>
+				</div>
+				<span class="spot-close menu-para">X</span>
+			<div class="menu-para menu-data-5">				
+				<img class="menu-content-img" src="images/reoptimize.JPG" alt="">
+			</div>
+			<div class="menu-para menu-data-6">
+				<img class="menu-content-img menu-content-img-6" src="images/dem.JPG" alt="">
+			</div>
+		</div>
+		
+		<div class="view-options">
+			<div class="menu-radio menu-para">
+				<input type="radio" name="view" id="dem" class="menu--dem" checked>
+				<!-- <label for="dem">DEM</label> -->
+				<input type="radio" name="view" id="ortho" class="menu--ortho">
+			</div>
+		</div>
+	</div>
+	<span class="end-heading menu-para">DEM</span>
+</div>
+<div class="simsubscreen" id="canvas19" style="visibility:hidden">
+<strong class="incanvas">STEP</strong>
+	<span class="circlebg" >&nbsp;17&nbsp;</span>
+	<p id="heading3" class="steptext">&nbsp; Next step</p>
+</div>
+
+<span class="map-note menu-para">
+			Select all the images captured during the UAV surveying and import them
+			<!-- Click on the marked image to view the zoomed image of GCP location. -->
+		</span>
+ <!-- This is the questions division -->
+	<span id="question-div" class = "fadeIn">
+		<p id="divq" style="font-family:verdana, sans-serif; font-size:14px;">Both ends of the pipe must be trimmed to ensure parallel faces.</p>
+		<p id="ans"></p>
+	</span>
+<!-- nextButton -->
+<div id="nav">
+<img id="nextButton" onclick="navNext()" src="images/Next.png" alt="" />
+</div>
+<!--Blinking Arrow	-->	
+<img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png" alt=""/>
+
+<div id="copyright"> &copy; <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+
+</div>
+<!-- <script src="js/exp1.js"></script> -->
+
+</body> 
 </html>
+
+
+

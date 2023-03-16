@@ -2,35 +2,82 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "DGPS uses a network of___________________ to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Fixed ground-based reference stations",
+        "b": "Fixed satellite station",
+        "c": "Fixed reference stations",
+        "d": "Fixed area based reference stations"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the significance of the elevation mask in the DGPS survey? State the incorrect option",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It sets an elevation angle in the receiver below which the receiver will not track GNSS signals",
+        "b": "It filters out signals from satellites below a certain angle of elevation above the horizon, to prevent them from using noisy signals",
+        "c": "It makes the DGPS receiver exclude the satellites that are low on the horizon from the position calculation",
+        "d": "It makes the GPS receiver exclude the satellites that are low on the horizon from the position calculation"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the RTK method, the base is placed over an unknown point.(say true or false)",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which one of the following places do not have a fixed ground-based reference station in India?",
+      "answers": {
+        "a": "Kolkata",
+        "b": "Lucknow",
+        "c": "Bangalore",
+        "d": "Hyderabad"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which one of the following statements is false in the case of DGPS survey requirements?",
+      "answers": {
+        "a": "A clear view of the sky is necessary",
+        "b": "There is no need to be provided with the known coordinates of a point in an area to start the survey initially",
+        "c": "Line of sight with the base is necessary",
+        "d": "Both b and c"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
