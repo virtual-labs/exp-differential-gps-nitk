@@ -1105,8 +1105,8 @@ function magic() {
                                                                             500
                                                                           );
                                                                         animateArrowATPosition(
-                                                                          495,
-                                                                          251.5,
+                                                                          505,
+                                                                          256,
                                                                           360
                                                                         );
                                                                         document.getElementById(
@@ -1133,7 +1133,8 @@ function magic() {
                                                                                 500
                                                                               );
                                                                             animateArrowATPosition(
-                                                                              672,
+                                                                              669,
+                                                                              256,
                                                                               360
                                                                             );
                                                                             document.getElementById(
@@ -1931,8 +1932,8 @@ function magic() {
                                                                             500
                                                                           );
                                                                         animateArrowATPosition(
-                                                                          475,
-                                                                          251.5,
+                                                                          505,
+                                                                          256,
                                                                           360
                                                                         );
                                                                         document.getElementById(
@@ -1959,8 +1960,8 @@ function magic() {
                                                                                 500
                                                                               );
                                                                             animateArrowATPosition(
-                                                                              642,
-                                                                              249.5,
+                                                                              669,
+                                                                              256,
                                                                               360
                                                                             );
                                                                             document.getElementById(
