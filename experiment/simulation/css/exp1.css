@@ -1327,10 +1327,12 @@ button {
 }
 
 .menu-content {
-  border: 1px solid black;
   padding: 2px;
   max-width: 100%;
   position: relative;
+}
+.menu-border {
+  border: 1px solid black;
 }
 
 .menu-para {
@@ -1516,7 +1518,7 @@ button {
 .gcp-container {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 70%;
   transform: translate(-50%, -50%);
 }
 

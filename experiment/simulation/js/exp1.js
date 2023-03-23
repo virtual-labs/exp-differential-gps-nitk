@@ -2167,7 +2167,13 @@ menuOption.addEventListener("click", function (e) {
     mapNote.classList.remove("note-flex");
     mapNote.classList.add("menu-para");
   }
+  if (opt === 3) {
+    document.querySelector(".menu-content").classList.remove("menu-border");
+  }
   if (opt != 3 && opt != 4 && opt != 6) {
+    document
+      .querySelector(`.menu-btn-${opt + 1}`)
+      .classList.remove("menu-para");
     document.querySelector(`.menu-btn-${opt + 1}`).classList.add("highlight");
     document.querySelector(`.menu-btn-${opt + 1}`).disabled = false;
     headingResult.innerHTML = steps[opt - 1];
@@ -2202,7 +2208,10 @@ uploadBtn.addEventListener("click", function () {
         document.querySelector(".menu-data-3").innerHTML =
           '<img class="menu-content-img" src="images/aerial.JPG" alt="">';
         document.querySelector(`.menu-btn-4`).disabled = false;
+        document.querySelector(`.menu-btn-4`).classList.remove("menu-para");
         document.querySelector(`.menu-btn-4`).classList.add("highlight");
+        document.querySelector(".menu-content").classList.add("menu-border");
+
         mapNote.innerHTML = notes[2];
       }, 300);
     }
@@ -2296,6 +2305,7 @@ spotDots.forEach(function (spot) {
     if (spotArray.length === 4) {
       document.querySelector(`.menu-btn-5`).disabled = false;
       document.querySelector(`.menu-btn-5`).classList.add("highlight");
+      document.querySelector(`.menu-btn-5`).classList.remove("menu-para");
       document.querySelector(".map-note").classList.add("menu-para");
       document.querySelector(`.spot-close`).classList.add("menu-para");
 
