@@ -643,7 +643,7 @@ function magic() {
     document.getElementById("cnctwifi").style.visibility = "visible";
 
     document.getElementById("heading").innerHTML =
-      "Connect to Trimble website.";
+      "Connect to the IP address.";
 
     myInt = setInterval(function () {
       animatearrow();
@@ -666,7 +666,7 @@ function magic() {
         }, 500);
         animateArrowATPosition(142.5, 544, 90);
         document.getElementById("heading").innerHTML =
-          "Connect to Trimble website.";
+          "Connect to the IP address.";
         document.getElementById("brwsr").onclick = function () {
           myStopFunction();
           document.getElementById("server").style.visibility = "visible";
@@ -1462,7 +1462,7 @@ function magic() {
     document.getElementById("cnctwifi2").style.visibility = "visible";
 
     document.getElementById("heading2").innerHTML =
-      "Connect to Trimble website.";
+      "Connect to the IP address.";
 
     myInt = setInterval(function () {
       animatearrow();
@@ -1485,7 +1485,7 @@ function magic() {
         }, 500);
         animateArrowATPosition(142.5, 544, 90);
         document.getElementById("heading2").innerHTML =
-          "Connect to Trimble website.";
+          "Connect to the IP address.";
         document.getElementById("brwsr2").onclick = function () {
           myStopFunction();
           document.getElementById("server2").style.visibility = "visible";
