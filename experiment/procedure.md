@@ -6,101 +6,101 @@ Step by step procedure to carry out the experiment goes here
 
 2. Click on the bag to takeout the tripod stand.
 
-![](images/st2.png)
+<img src="images/st2.png" width=800 height=600 />
 
 3. Click on the bottom of the tripod stand to fix the tip.
 
-![](images/st4.png)
+<img src="images/st4.png" width=800 height=600 />
 
-![](images/st5.png)
+<img src="images/st5.png" width=800 height=600 />
 
 4. The tip is fixed to the tripod stand.Click on the next button to proceed.
 
-![](images/st6.png)
+<img src="images/st6.png" width=800 height=600 />
 
 5. Click on the tripod stand to make it vertical.
 
-![](images/st7.png)
+<img src="images/st7.png" width=800 height=600 />
 
 6. Click on the screw to unclamp the tripod legs.
 
-![](images/st8.png)
+<img src="images/st8.png" width=800 height=600 />
 
 7. The screw is unclamped and the leg length is increased to the required height.Click on the next button to proceed.
 
-![](images/st14.png)
+<img src="images/st14.png" width=800 height=600 />
 
 8. Click on the tripod to place it at the required point.
 
-![](images/st15.png)
+<img src="images/st15.png" width=800 height=600 />
 
 9. Click on the bottom to release the central drop stand to touch the ground.
 
-![](images/st17.png)
+<img src="images/st17.png" width=800 height=600 />
 
 10. The tripod stand is placed at the required point.Click on the next button to proceed.
 
-![](images/st20.png)
+<img src="images/st20.png" width=800 height=600 />
 
 11. Click on the adjustment springs to bring the bubble to the centre to make it truly vertical.
 
-![](images/st21.png)
+<img src="images/st21.png" width=800 height=600 />
 
 12. Select the correct answer to proceed with the simulation.
 
-![](images/st25.png)
+<img src="images/st25.png" width=800 height=600 />
 
 13. Click on the next button to proceed.
 
-![](images/st26.png)
+<img src="images/st26.png" width=800 height=600 />
 
 14. Click on the lid of the base to open it.
 
-![](images/st27.png)
+<img src="images/st27.png" width=800 height=600 />
 
 15. Click on the battery to insert it to the base.
 
-![](images/st28.png)
+<img src="images/st28.png" width=800 height=600 />
 
 16. Click on the lid of the base to close it.
 
-![](images/st29.png)
+<img src="images/st29.png" width=800 height=600 />
 
 17. Click on the next button to proceed.
 
-![](images/st30.png)
+<img src="images/st30.png" width=800 height=600 />
 
 18. Click on the base to attach the rod.
 
-![](images/st31.png)
+<img src="images/st31.png" width=800 height=600 />
 
 19. Click on the rod to attach it to the levelled tripod.
 
-![](images/st33.png)
+<img src="images/st33.png" width=800 height=600 />
 
 20. Select the correct answer to proceed with the simulation.
 
-![](images/st36.png)
+<img src="images/st36.png" width=800 height=600 />
 
 21. Click on the next button to proceed.
 
-![](images/st37.png)
+<img src="images/st37.png" width=800 height=600 />
 
 22. Click on the bottom to observe the height of the stand.
 
-![](images/st38.png)
+<img src="images/st38.png" width=800 height=600 />
 
 23. Select the correct answer to proceed with the simulation.
 
-![](images/st39.png)
+<img src="images/st39.png" width=800 height=600 />
 
 24. Click on the next button to proceed.
 
-![](images/st40.png)
+<img src="images/st40.png" width=800 height=600 />
 
 25. Setting up of base station at required location is complete. Click on the next button to proceed.
 
-![](images/st41.png)
+<img src="images/st41.png" width=800 height=600 />
 
 26. Click on the internet access button to connect to base Wi-Fi. Then click on the chrome website.
 
