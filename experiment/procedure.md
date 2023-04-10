@@ -2,7 +2,7 @@ Step by step procedure to carry out the experiment goes here
 
 1. When you open Setting up the Base Station simulation, a window will open as shown below, click on Description to understand the terminologies, click on NEXT button to proceed.
 
-![](images/st1.png)
+<img src="images/st1.png" width=800 height=600 />
 
 2. Click on the bag to takeout the tripod stand.
 
