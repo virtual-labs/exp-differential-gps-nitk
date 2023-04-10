@@ -10,30 +10,30 @@
         "d": "Fixed area based reference stations"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Fixed ground-based reference stations: This is the correct answer. DGPS uses a network of fixed ground-based reference stations to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions.",
+        "b": "Fixed satellite station: This is not the correct answer. DGPS uses ground-based reference stations, not satellite stations.",
+        "c": "Fixed reference stations: This is not the correct answer. DGPS uses ground-based reference stations, not reference stations that can be fixed or movable.",
+        "d": "Fixed area based reference stations: This is not the correct answer. DGPS uses ground-based reference stations that are fixed and located at specific positions."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the significance of the elevation mask in the DGPS survey? State the incorrect option",
+      "question": "What is the primary purpose of DGPS in surveying?",
       "answers": {
-        "a": "It sets an elevation angle in the receiver below which the receiver will not track GNSS signals",
-        "b": "It filters out signals from satellites below a certain angle of elevation above the horizon, to prevent them from using noisy signals",
-        "c": "It makes the DGPS receiver exclude the satellites that are low on the horizon from the position calculation",
-        "d": "It makes the GPS receiver exclude the satellites that are low on the horizon from the position calculation"
+        "a": "To provide accurate and precise positioning data",
+        "b": "To identify and correct for errors in GPS signals",
+        "c": "To eliminate the need for ground-based reference stations",
+        "d": "To provide real-time weather information"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "DGPS can provide accurate and precise positioning data, but its primary purpose is to correct errors in GPS signals.",
+        "b": "The primary purpose of DGPS in surveying is to identify and correct the errors in GPS signals.",
+        "c": "DGPS requires ground-based reference stations to broadcast correction information, so it does not eliminate the need for them.",
+        "d": "DGPS does not provide real-time weather information."
       },
-      "correctAnswer": "d",
-      "difficulty": "intermediate"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     },
     {
       "question": "In the RTK method, the base is placed over an unknown point.(say true or false)",
@@ -42,11 +42,11 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "The base station in the RTK (Real-Time Kinematic) method is placed over a known point with accurate coordinates. This known point is typically a surveyed point with a known coordinate value.",
+        "b": "The base station in RTK (Real-Time Kinematic) method is placed over a known point with accurate coordinates. This known point is typically a surveyed point with a known coordinate value."
       },
       "correctAnswer": "b",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "Which one of the following places do not have a fixed ground-based reference station in India?",
@@ -57,13 +57,13 @@
         "d": "Hyderabad"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Kolkata, Bangalore, and Hyderabad have fixed ground-based reference stations in India for DGPS surveys.",
+        "b": "Lucknow does not have fixed ground based reference stations in India for DGPS surveys.",
+        "c": "Kolkata, Bangalore, and Hyderabad have fixed ground-based reference stations in India for DGPS surveys.",
+        "d": "Kolkata, Bangalore, and Hyderabad have fixed ground-based reference stations in India for DGPS surveys."
       },
-      "correctAnswer": "a",
-      "difficulty": "advanced"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
     {
       "question": "Which one of the following statements is false in the case of DGPS survey requirements?",
@@ -74,13 +74,13 @@
         "d": "Both b and c"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "A clear view of the sky is necessary: True, because GPS signals come from satellites in space and require an unobstructed view of the sky.",
+        "b": "The rover station can be a mobile system to take to different locations of unknown coordinates: True, because the purpose of the rover is to move around to different locations and collect GPS data.",
+        "c": "The base station is not a stationary system: False, because the base station is a stationary system that provides corrections to the GPS signals received by the rover.",
+        "d": "Both b and c: False, because option b is true and option c is false."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     }
   ]
 }
