@@ -10,13 +10,13 @@
         "d": "2-4cm"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "In DGPS the location accuracy does not range in meters.",
+        "b": "In DGPS the location accuracy does not range in mm",
+        "c": "In DGPS the location accuracy ranges in cm ie. 1-3cm.",
+        "d": "In DGPS the location accuracy does not range in km."
       },
       "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
       "question": "DGPS uses a fixed, known position to adjust real time GPS signals to eliminate________",
@@ -27,10 +27,10 @@
         "d": "GPS errors"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Signal error: refers to any deviation between the actual transmitted signal and the intended signal, which can be caused by various factors such as atmospheric conditions, equipment malfunctions, or interference.",
+        "b": "Pseudorange errors: refer to the difference between the GPS receiver's calculated range to a satellite and the actual range, caused by errors in the GPS signal including atmospheric delays and clock errors.",
+        "c": "Signal noise: is any unwanted or random variation in the signal caused by external sources such as electromagnetic interference or thermal noise in electronic circuits.",
+        "d": "GPS errors: include a variety of sources such as satellite clock errors, atmospheric delays, or multipath interference, that can affect the accuracy of the GPS signal and lead to errors in determining the position."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,13 +44,13 @@
         "d": "Ionosphere"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Ephemeris data: Ephemeris data is used by GPS receivers to determine the position of GPS satellites in the sky.",
+        "b": "Troposphere: The troposphere is the layer of the Earth's atmosphere that affects the speed of GPS signals as they pass through it, causing them to bend slightly.",
+        "c": "Multipath: Multipath is the distortion of GPS signals caused by reflection off nearby surfaces, such as buildings, trees, and other obstacles.",
+        "d": "Ionosphere: The ionosphere is the layer of the Earth's atmosphere that affects the speed and path of GPS signals as they pass through it, causing them to bend slightly."
       },
-      "correctAnswer": "d",
-      "difficulty": "advanced"
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     },
     {
       "question": "In which orbit do the GPS satellites fly around the earth?",
@@ -61,13 +61,13 @@
         "d": "Polar orbit"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Medium Earth orbit: GPS satellites fly in a circular medium Earth orbit (MEO) at an altitude of around 20,200 km, providing global coverage by constantly traveling around the Earth twice a day.",
+        "b": "Geostationary transfer orbit: This orbit is used to transfer a satellite from a low Earth orbit to a geostationary orbit. GPS satellites are not placed in geostationary transfer orbit.",
+        "c": "Low Earth orbit: Satellites in Low Earth Orbit (LEO) have an altitude of less than 2,000 km and orbit the Earth in about 90 minutes. GPS satellites are not placed in low Earth orbit.",
+        "d": "Polar orbit: Satellites in polar orbit pass over the Earth's poles and provide coverage of the entire planet as the Earth rotates beneath them. GPS satellites do not fly in polar orbit, but they do cover the entire planet by using a constellation of satellites in medium Earth orbit."
       },
       "correctAnswer": "a",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     },
     {
       "question": "What is the full form of DGPS?",
@@ -78,13 +78,13 @@
         "d": "Differential global position system"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Differentiate global position system: This is not the correct acronym for DGPS. The term 'differentiate' does not have any relevance to the GPS system.",
+        "b": "Differential global positioning system: This is the correct acronym for DGPS. DGPS is a system that uses a fixed, known position to adjust real-time GPS signals to eliminate errors and improve accuracy.",
+        "c": "Differential earth positioning system: This is not the correct acronym for DGPS. The term 'earth' is not used in the official name of the GPS system.",
+        "d": "Differential globe position system: This is not the correct acronym for DGPS. The term 'globe' is not used in the official name of the GPS system."
       },
       "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "difficulty": "advnaced"
     }
   ]
 }
