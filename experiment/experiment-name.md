@@ -1,1 +1,1 @@
-## Georeferencing Aerial Maps Using DGPS
+## Georeferencing aerial maps using DGPS (Differential GPS)
