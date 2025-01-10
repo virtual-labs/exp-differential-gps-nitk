@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "DGPS uses a fixed, known position to adjust real time GPS signals to eliminate________",
+      "question": "DGPS uses a fixed, known position to adjust real time GPS signals to eliminate ________",
       "answers": {
         "a": "Signal error",
         "b": "Pseudorange errors",

@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "DGPS uses a network of___________________ to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions",
+      "question": "DGPS uses a network of ________ to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions",
       "answers": {
         "a": "Fixed ground-based reference stations",
         "b": "Fixed satellite station",
